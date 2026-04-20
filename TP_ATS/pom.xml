@@ -91,13 +91,18 @@
                     </dependency>
                 </dependencies>
                 <configuration>
-                    <!-- Aponta para as tuas classes principais -->
                     <targetClasses>
-                        <param>com.spotifum.*</param>
+                        <param>org.Model.*</param>
+                        <param>org.Controller.*</param>
+                        <param>org.View.*</param>
+                        <param>org.Utils.*</param>
                     </targetClasses>
                     <targetTests>
-                        <param>com.spotifum.*</param>
+                        <param>org.*</param>
                     </targetTests>
+                    <excludedTestClasses>
+                        <param>org.View.ProfileMenuTest</param>
+                    </excludedTestClasses>
                     <outputFormats>
                         <outputFormat>HTML</outputFormat>
                     </outputFormats>
