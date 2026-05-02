@@ -1,6 +1,10 @@
+## Análise e Teste de Software - Trabalho Prático
+
+**Projeto escolhido:** Projeto 1;
+
 Inicio do projeto tinhamos 235 testes unitarios às varias classes, nesta fase apenas um teste falhava:
 
-- **testHandleInputChangePlans**:
+- **testHandleInputChangePlans:**
   - Expected: true
   - Actual: false
   - Explicação: bug do case 3 sem break
@@ -23,12 +27,12 @@ O teste de round‑trip confirma que a serializacao preserva o estado observado 
 Após análise da cobertura de testes atual do projeto decidimos focar as atenções em criar testes unitários para as seguintes classes:
 
 
-**org.Controller.dtos.MusicInfo**:
+**org.Controller.dtos.MusicInfo:**
 
 MusicInfo é um Data Transfer Object (DTO) que transporta informação de uma música entre o Controller e a View durante a reprodução. Tinha 62% de cobertura de instrucções na baseline mas nenhum teste direto. Foram adicionados 14 testes que cobrem os dois construtores (o principal e o de erro) e o único setter da classe. O teste testConstrutorPrincipalLetraPartidaEmPalavras é particularmente relevante: verifica que o split da letra por espaços funciona correctamente, comportamento que a View depende para mostrar a letra palavra a palavra durante a reprodução.
 
 
-**org.Utils.BrowserOpener e org.Utils.MusicPlayer**:
+**org.Utils.BrowserOpener e org.Utils.MusicPlayer:**
 
 Estas duas classes apresentam um desafio comum em testes unitários: dependências de ambiente externo. O BrowserOpener depende da API java.awt.Desktop, que requer um ambiente gráfico (GUI). O MusicPlayer depende de ficheiros de áudio WAV armazenados nos recursos da aplicação, que não existem no ambiente de testes.
 A estratégia adoptada foi testar o comportamento em condições de ausência de recursos externos.
@@ -36,7 +40,7 @@ A estratégia adoptada foi testar o comportamento em condições de ausência de
 Para o BrowserOpener: verificar que um URI sintaticamente inválido lança exceção, e que em ambiente headless o método lança UnsupportedOperationException com a mensagem esperada em vez de fazer crash silencioso.
 Para o MusicPlayer: verificar que a ausência de ficheiros WAV resulta em retorno null em vez de exceção.
 
-**org.Model.SpotifUM**:
+**org.Model.SpotifUM:**
 
 O SpotifUM é a classe central do modelo, concentra toda a lógica de negócio. A suite existente cobria:
 - criação de utilizadores;
@@ -45,7 +49,7 @@ O SpotifUM é a classe central do modelo, concentra toda a lógica de negócio. 
 
  Foram adicionados 43 testes organizados em 9 grupos funcionais: músicas, géneros, estatísticas, permissões por plano, pontos, playlists, reproduções, dados do utilizador e casos-limite.
 
-**Nota**: Foram também adicionados testes ao Controller após a verificação de baixa cobertura.
+**Nota:** Foram também adicionados testes ao Controller após a verificação de baixa cobertura.
 
 
 ### Estado do Projeto após a adição de testes
@@ -57,3 +61,18 @@ Adicionámos 70 testes novos e nenhum deles falhou por razões inesperadas. A ú
 A adição de 70 testes produziu melhorias significativas em 5 pacotes. O ganho mais expressivo foi em org.Model, onde a cobertura de branches passou de 38% para 66%, refletindo os 43 novos testes ao SpotifUM que exercitam caminhos condicionais antes inexplorados. O pacote org.Controller.dtos atingiu 100% de cobertura após a criação do MusicInfoTest. O org.Controller manteve-se em 30%/20% pensamos que se deve aos seus métodos dependerem de estado de sessão (utilizador autenticado) que os testes existentes não estabelecem de forma sistemática; esta lacuna será endereçada na análise de mutantes.
 
  A cobertura total passou de 49% para 55% em instrucções e de 48% para 54% em branches.
+
+
+ ### EvoSuite - Geração automática de testes
+
+Para iniciarmos esta nova fase do trabalho decidimos começar por uma classe que já possui uma boa cobertura de testes: a classe Music. Assim conseguimos nos familiarizar com a ferramenta e ajustar os seus parâmetros mais facilmente.
+
+**Resultados EvoSuite na classe Music:**
+
+ - O EvoSuite gerou 44 testes em 61 segundos (2918 gerações do algoritmo genético), atingindo cobertura total de linha (100%) e de branch (100%), e um mutation score de 90%, superior ao obtido pelos testes manuais.
+
+- A cobertura de 'OUTPUT' ficou em 93% (43/46 goals), o único critério não totalmente satisfeito.
+
+Durante a fase de validação dos testes gerados, o EvoSuite detectou um teste instável (test0): o teste envolve chamar music0.setName(null) seguido de music0.equals(music1), e o resultado da assertion assertTrue(music1.equals(music0)) é não-determinístico. Isto revela que o método equals da classe Music compara apenas o campo name — quando name é null em music0 e "" em music1 (construtor vazio), o comportamento de equals é assimétrico: music0.equals(music1) é false mas music1.equals(music0) deveria ser também false. O EvoSuite identificou este edge case automaticamente, algo que os testes manuais não cobriram.
+
+
