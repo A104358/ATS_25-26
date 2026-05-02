@@ -6,11 +6,54 @@ Inicio do projeto tinhamos 235 testes unitarios às varias classes, nesta fase a
   - Explicação: bug do case 3 sem break
   - O switch-case cai para o case 4 por ausência de break, navegando para o PlanMenu
 
-Durante a execução inicial da suite de testes foi detetado um problema de compatibilidade entre o Java 25 (Homebrew) e o Mockito 5.11.0. O Mockito utiliza inline mocking que requer modificação de bytecode em runtime (via dynamic attach), operação que o Java 25 passou a restringir por razões de segurança. A solução passou por configurar o Maven Surefire Plugin para carregar o agente Mockito explicitamente via -javaagent, garantindo compatibilidade sem alterar a versão do Java nem do Mockito. Esta configuração é necessária em qualquer ambiente com Java 21+.
-
+**ControllerTest**: Foi adicionado ainda antes de verificarmos a cobertura pois consideramos que seja um dos fluxos principais a exercitar testes. É então um conjunto de testes unitarios que validam o comportamento do controlador, confirmando que os metodos retornam os resultados esperados e que as regras de negócio e erros sao tratados corretamente.
 
 **Testes na serialização**
 
-Foram adicionados testes unitarios para o utilitario de serializacao, cobrindo o fluxo principal (round‑trip) e os cenarios de erro mais provaveis (null, ficheiro inexistente, caminho invalido).”
-“O teste de round‑trip confirma que a serializacao preserva o estado observado por SpotifUM.equals.”
-“Nota: SpotifUM.equals nao compara estatisticas (artistReproductions, genreReproductions), pelo que a cobertura total do estado depende dessa implementacao.
+Foram adicionados testes unitarios para o utilitario de serializacao, cobrindo o fluxo principal (round‑trip) e os cenarios de erro mais provaveis (null, ficheiro inexistente, caminho invalido).
+O teste de round‑trip confirma que a serializacao preserva o estado observado por SpotifUM.equals.
+
+
+
+### Cobertura de Testes - jacoco
+
+![jacoco com os testes base](images/jacoco1.png)
+
+
+Após análise da cobertura de testes atual do projeto decidimos focar as atenções em criar testes unitários para as seguintes classes:
+
+
+**org.Controller.dtos.MusicInfo**:
+
+MusicInfo é um Data Transfer Object (DTO) que transporta informação de uma música entre o Controller e a View durante a reprodução. Tinha 62% de cobertura de instrucções na baseline mas nenhum teste direto. Foram adicionados 14 testes que cobrem os dois construtores (o principal e o de erro) e o único setter da classe. O teste testConstrutorPrincipalLetraPartidaEmPalavras é particularmente relevante: verifica que o split da letra por espaços funciona correctamente, comportamento que a View depende para mostrar a letra palavra a palavra durante a reprodução.
+
+
+**org.Utils.BrowserOpener e org.Utils.MusicPlayer**:
+
+Estas duas classes apresentam um desafio comum em testes unitários: dependências de ambiente externo. O BrowserOpener depende da API java.awt.Desktop, que requer um ambiente gráfico (GUI). O MusicPlayer depende de ficheiros de áudio WAV armazenados nos recursos da aplicação, que não existem no ambiente de testes.
+A estratégia adoptada foi testar o comportamento em condições de ausência de recursos externos.
+
+Para o BrowserOpener: verificar que um URI sintaticamente inválido lança exceção, e que em ambiente headless o método lança UnsupportedOperationException com a mensagem esperada em vez de fazer crash silencioso.
+Para o MusicPlayer: verificar que a ausência de ficheiros WAV resulta em retorno null em vez de exceção.
+
+**org.Model.SpotifUM**:
+
+O SpotifUM é a classe central do modelo, concentra toda a lógica de negócio. A suite existente cobria:
+- criação de utilizadores;
+- autenticação;
+- operações básicas de álbum;
+
+ Foram adicionados 43 testes organizados em 9 grupos funcionais: músicas, géneros, estatísticas, permissões por plano, pontos, playlists, reproduções, dados do utilizador e casos-limite.
+
+**Nota**: Foram também adicionados testes ao Controller após a verificação de baixa cobertura.
+
+
+### Estado do Projeto após a adição de testes
+
+Adicionámos 70 testes novos e nenhum deles falhou por razões inesperadas. A única falha continua a ser o testHandleInputChangePlans já documentado, os novos testes são válidos e estáveis.
+
+![jacoco com os testes unitarios](images/jacoco2.png)
+
+A adição de 70 testes produziu melhorias significativas em 5 pacotes. O ganho mais expressivo foi em org.Model, onde a cobertura de branches passou de 38% para 66%, refletindo os 43 novos testes ao SpotifUM que exercitam caminhos condicionais antes inexplorados. O pacote org.Controller.dtos atingiu 100% de cobertura após a criação do MusicInfoTest. O org.Controller manteve-se em 30%/20% pensamos que se deve aos seus métodos dependerem de estado de sessão (utilizador autenticado) que os testes existentes não estabelecem de forma sistemática; esta lacuna será endereçada na análise de mutantes.
+
+ A cobertura total passou de 49% para 55% em instrucções e de 48% para 54% em branches.
