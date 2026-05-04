@@ -4,6 +4,8 @@ import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.Test;
 import static org.junit.jupiter.api.Assertions.*;
 
+import java.time.LocalDate;
+
 public class ControllerTest {
 
     private Controller controller;
@@ -294,5 +296,56 @@ public class ControllerTest {
     void testListAllGenres() {
         String result = controller.listAllGenres();
         assertNotNull(result);
+    }
+
+    // NOVOS TESTES:    
+
+    @Test
+    void testGetUserWithMostReproductionsComDatasSemUtilizadores() {
+        String result = controller.getUserWithMostReproductions(
+                LocalDate.of(2024, 1, 1), LocalDate.of(2024, 12, 31));
+        assertTrue(result.contains("❌") || result.contains("Erro") || result.contains("erro"));
+    }
+
+    @Test
+    void testImportModelFicheiroInexistente() {
+        String result = controller.importModel("/ficheiro/que/nao/existe/algures.ser");
+        assertTrue(result.contains("❌"));
+    }
+
+    @Test
+    void testExportModelPathInvalido() {
+        String result = controller.exportModel("/caminho/invalido/nao/existe/test.ser");
+        assertTrue(result.contains("❌"));
+    }
+
+    @Test
+    void testAddMusicSemAlbumPreExistenteFalha() {
+        // O álbum "AlbumQueNaoExiste" nunca foi criado — o controller deve falhar graciosamente
+        String result = controller.addMusic("Song", "Artist", "Pub", "l", "f",
+                "Pop", "AlbumQueNaoExiste", 200, false, "");
+        assertTrue(result.contains("❌") || result.contains("Erro") || result.contains("erro"));
+    }
+
+    @Test
+    void testListAllMusicsComDuasMusicas() {
+        controller.createAlbum("AlbumX", "ArtistX");
+        controller.addMusic("Song1", "ArtistX", "P", "l", "f", "Pop", "AlbumX", 200, false, "");
+        controller.addMusic("Song2", "ArtistX", "P", "l", "f", "Pop", "AlbumX", 150, false, "");
+        String result = controller.listAllMusics();
+        assertTrue(result.contains("Song1"));
+        assertTrue(result.contains("Song2"));
+    }
+
+    @Test
+    void testGetMostReproducedMusicSemMusicas() {
+        String result = controller.getMostReproducedMusic();
+        assertTrue(result.contains("❌") || result.contains("Erro") || result.contains("erro"));
+    }
+
+    @Test
+    void testGetMostReproducedArtistSemDados() {
+        String result = controller.getMostReproducedArtist();
+        assertTrue(result.contains("❌") || result.contains("Erro") || result.contains("erro"));
     }
 }

@@ -14,18 +14,47 @@
 
     <properties>
     
-        <maven.compiler.release>11</maven.compiler.release>
+        <maven.compiler.release>21</maven.compiler.release>
         <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
         <mockito.version>5.11.0</mockito.version>
 
     </properties>
-
+    <repositories>
+        <repository>
+            <id>EvoSuite</id>
+            <name>EvoSuite Repository</name>
+            <url>https://www.evosuite.org/m2</url>
+        </repository>
+    </repositories>
     <dependencies>
+
+        <!-- EvoSuite Testes -->
+        <dependency>
+            <groupId>org.evosuite</groupId>
+            <artifactId>evosuite-standalone-runtime</artifactId>
+            <version>1.0.6</version>
+            <scope>test</scope>
+        </dependency>
+
 
         <!-- JUnit 5 -->
         <dependency>
             <groupId>org.junit.jupiter</groupId>
             <artifactId>junit-jupiter</artifactId>
+            <version>5.10.2</version>
+            <scope>test</scope>
+        </dependency>
+
+        <!-- JUnit 4 (EvoSuite-generated tests) via Vintage engine -->
+        <dependency>
+            <groupId>junit</groupId>
+            <artifactId>junit</artifactId>
+            <version>4.13.2</version>
+            <scope>test</scope>
+        </dependency>
+        <dependency>
+            <groupId>org.junit.vintage</groupId>
+            <artifactId>junit-vintage-engine</artifactId>
             <version>5.10.2</version>
             <scope>test</scope>
         </dependency>
@@ -60,6 +89,13 @@
                     <argLine>
                         @{argLine}
                     </argLine>
+                    <classpathDependencyExcludes>
+                        <classpathDependencyExclude>org.evosuite:evosuite-standalone-runtime</classpathDependencyExclude>
+                    </classpathDependencyExcludes>
+                    <excludes>
+                        <exclude>**/*ESTest*.java</exclude>
+                        <exclude>**/*ESTest_scaffolding.java</exclude>
+                    </excludes>
                 </configuration>
             </plugin>
 
@@ -118,5 +154,68 @@
 
         </plugins>
     </build>
+
+    <profiles>
+        <profile>
+            <id>evosuite</id>
+            <properties>
+                <maven.compiler.release>11</maven.compiler.release>
+            </properties>
+            <build>
+                <directory>${project.basedir}/target-evosuite</directory>
+                <plugins>
+                    <plugin>
+                        <groupId>org.apache.maven.plugins</groupId>
+                        <artifactId>maven-surefire-plugin</artifactId>
+                        <executions>
+                            <execution>
+                                <id>default-test</id>
+                                <phase>none</phase>
+                            </execution>
+                            <execution>
+                                <id>junit5-tests</id>
+                                <goals>
+                                    <goal>test</goal>
+                                </goals>
+                                <configuration combine.self="override">
+                                    <argLine>
+                                        @{argLine}
+                                    </argLine>
+                                    <classpathDependencyExcludes>
+                                        <classpathDependencyExclude>org.evosuite:evosuite-standalone-runtime</classpathDependencyExclude>
+                                    </classpathDependencyExcludes>
+                                    <includes>
+                                        <include>**/*Test.java</include>
+                                    </includes>
+                                    <excludes>
+                                        <exclude>**/ProfileMenuTest.java</exclude>
+                                        <exclude>**/*ESTest*.java</exclude>
+                                        <exclude>**/*ESTest_scaffolding.java</exclude>
+                                    </excludes>
+                                </configuration>
+                            </execution>
+                            <execution>
+                                <id>evosuite-tests</id>
+                                <goals>
+                                    <goal>test</goal>
+                                </goals>
+                                <configuration combine.self="override">
+                                    <argLine>
+                                        @{argLine}
+                                    </argLine>
+                                    <includes>
+                                        <include>**/*ESTest*.java</include>
+                                    </includes>
+                                    <excludes>
+                                        <exclude>**/*ESTest_scaffolding.java</exclude>
+                                    </excludes>
+                                </configuration>
+                            </execution>
+                        </executions>
+                    </plugin>
+                </plugins>
+            </build>
+        </profile>
+    </profiles>
 
 </project>

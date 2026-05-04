@@ -75,4 +75,24 @@ Para iniciarmos esta nova fase do trabalho decidimos começar por uma classe que
 
 Durante a fase de validação dos testes gerados, o EvoSuite detectou um teste instável (test0): o teste envolve chamar music0.setName(null) seguido de music0.equals(music1), e o resultado da assertion assertTrue(music1.equals(music0)) é não-determinístico. Isto revela que o método equals da classe Music compara apenas o campo name — quando name é null em music0 e "" em music1 (construtor vazio), o comportamento de equals é assimétrico: music0.equals(music1) é false mas music1.equals(music0) deveria ser também false. O EvoSuite identificou este edge case automaticamente, algo que os testes manuais não cobriram.
 
+Após verificarmos os resultados para a classe Music avançamos para as outras classes obtendo os seguintes resultados:
 
+### Resultados EvoSuite:
+
+| Classe | Testes gerados | Cobertura média | Mutation score | Tempo |
+| :--- | :--- | :--- | :--- | :--- |
+| `Music` | 44 | 93% | 90% | 60s |
+| `Album` | 29 | 91% | 85% | 60s |
+| `Playlist` | 37 | 92% | 72% | 60s |
+| `User` | 76 | 90% | 63% | 60s |
+| `SpotifUM` | 157 | 83% | **29%** | 120s |
+| `Controller` | 104 | 79% | **44%** | 120s |
+
+
+### Análise dos resultados EvoSuite
+
+Os resultados revelam um padrão consistente com a complexidade de cada classe. As classes com lógica encapsulada e sem dependências de estado externo (Music, Album, Playlist) obtiveram mutation scores entre 72% e 90%, demonstrando que o EvoSuite é eficaz neste tipo de classes. As classes com estado interno complexo e dependências entre objectos (SpotifUM, Controller) apesar de termos dado o dobro do tempo do que foi dado às outras classes, obtiveram scores significativamente mais baixos, não por limitação dos testes gerados, mas porque o EvoSuite não consegue construir cenários de estado coerentes.
+
+Ex: Autenticar um utilizador antes de chamar métodos que o requerem, ou garantir que um álbum existe antes de adicionar uma música.
+
+O teste instável detectado na classe Music é um exemplo concreto do valor do EvoSuite: encontrou um edge case que os testes manuais não contemplaram.

@@ -1,0 +1,4 @@
+-------------------------------------------------------------------------------
+Test set: org.Model.SpotifUM_ESTest
+-------------------------------------------------------------------------------
+Tests run: 157, Failures: 0, Errors: 0, Skipped: 10, Time elapsed: 0.049 s -- in org.Model.SpotifUM_ESTest

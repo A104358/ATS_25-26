@@ -1,4 +1,5 @@
 package org.View;
+import java.util.Arrays;
 
 import java.util.Collections;
 import java.util.List;
@@ -105,7 +106,7 @@ public class ReproductionMenu extends Menu {
             System.out.println("\n🚫 Música não encontrada.");
             return;
         }
-        List<String> musicList = List.of(musicName);
+        List<String> musicList = Arrays.asList(musicName);
         playMusicList(musicList, musicName);
     }
 

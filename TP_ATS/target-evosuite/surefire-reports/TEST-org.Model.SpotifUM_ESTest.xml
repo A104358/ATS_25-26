@@ -1,0 +1,242 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="https://maven.apache.org/surefire/maven-surefire-plugin/xsd/surefire-test-report-3.0.xsd" version="3.0" name="org.Model.SpotifUM_ESTest" time="0.049" tests="157" errors="0" skipped="10" failures="0">
+  <properties>
+    <property name="gopherProxySet" value="false"/>
+    <property name="awt.toolkit" value="sun.lwawt.macosx.LWCToolkit"/>
+    <property name="java.specification.version" value="11"/>
+    <property name="sun.cpu.isalist" value=""/>
+    <property name="sun.jnu.encoding" value="UTF-8"/>
+    <property name="java.class.path" value="/Users/tiagobarros/ATS_25-26/TP_ATS/target-evosuite/test-classes:/Users/tiagobarros/ATS_25-26/TP_ATS/target-evosuite/classes:/Users/tiagobarros/.m2/repository/org/evosuite/evosuite-standalone-runtime/1.0.6/evosuite-standalone-runtime-1.0.6.jar:/Users/tiagobarros/.m2/repository/org/junit/jupiter/junit-jupiter/5.10.2/junit-jupiter-5.10.2.jar:/Users/tiagobarros/.m2/repository/org/junit/jupiter/junit-jupiter-api/5.10.2/junit-jupiter-api-5.10.2.jar:/Users/tiagobarros/.m2/repository/org/opentest4j/opentest4j/1.3.0/opentest4j-1.3.0.jar:/Users/tiagobarros/.m2/repository/org/junit/platform/junit-platform-commons/1.10.2/junit-platform-commons-1.10.2.jar:/Users/tiagobarros/.m2/repository/org/junit/jupiter/junit-jupiter-params/5.10.2/junit-jupiter-params-5.10.2.jar:/Users/tiagobarros/.m2/repository/org/junit/jupiter/junit-jupiter-engine/5.10.2/junit-jupiter-engine-5.10.2.jar:/Users/tiagobarros/.m2/repository/junit/junit/4.13.2/junit-4.13.2.jar:/Users/tiagobarros/.m2/repository/org/hamcrest/hamcrest-core/1.3/hamcrest-core-1.3.jar:/Users/tiagobarros/.m2/repository/org/junit/vintage/junit-vintage-engine/5.10.2/junit-vintage-engine-5.10.2.jar:/Users/tiagobarros/.m2/repository/org/junit/platform/junit-platform-engine/1.10.2/junit-platform-engine-1.10.2.jar:/Users/tiagobarros/.m2/repository/org/apiguardian/apiguardian-api/1.1.2/apiguardian-api-1.1.2.jar:/Users/tiagobarros/.m2/repository/net/jqwik/jqwik/1.8.4/jqwik-1.8.4.jar:/Users/tiagobarros/.m2/repository/net/jqwik/jqwik-api/1.8.4/jqwik-api-1.8.4.jar:/Users/tiagobarros/.m2/repository/net/jqwik/jqwik-web/1.8.4/jqwik-web-1.8.4.jar:/Users/tiagobarros/.m2/repository/net/jqwik/jqwik-time/1.8.4/jqwik-time-1.8.4.jar:/Users/tiagobarros/.m2/repository/net/jqwik/jqwik-engine/1.8.4/jqwik-engine-1.8.4.jar:/Users/tiagobarros/.m2/repository/org/mockito/mockito-core/5.11.0/mockito-core-5.11.0.jar:/Users/tiagobarros/.m2/repository/net/bytebuddy/byte-buddy/1.14.12/byte-buddy-1.14.12.jar:/Users/tiagobarros/.m2/repository/net/bytebuddy/byte-buddy-agent/1.14.12/byte-buddy-agent-1.14.12.jar:/Users/tiagobarros/.m2/repository/org/objenesis/objenesis/3.3/objenesis-3.3.jar:"/>
+    <property name="java.vm.vendor" value="Microsoft"/>
+    <property name="sun.arch.data.model" value="64"/>
+    <property name="java.vendor.url" value="https://www.microsoft.com"/>
+    <property name="user.timezone" value="Europe/Lisbon"/>
+    <property name="java.vm.specification.version" value="11"/>
+    <property name="os.name" value="Mac OS X"/>
+    <property name="sun.java.launcher" value="SUN_STANDARD"/>
+    <property name="user.country" value="PT"/>
+    <property name="sun.boot.library.path" value="/Users/tiagobarros/Library/Java/JavaVirtualMachines/ms-11.0.27/Contents/Home/lib"/>
+    <property name="sun.java.command" value="/Users/tiagobarros/ATS_25-26/TP_ATS/target-evosuite/surefire/surefirebooter-20260504215221125_6.jar /Users/tiagobarros/ATS_25-26/TP_ATS/target-evosuite/surefire 2026-05-04T21-52-21_074-jvmRun1 surefire-20260504215221125_4tmp surefire_1-20260504215221125_5tmp"/>
+    <property name="http.nonProxyHosts" value="local|*.local|169.254/16|*.169.254/16"/>
+    <property name="jdk.debug" value="release"/>
+    <property name="surefire.test.class.path" value="/Users/tiagobarros/ATS_25-26/TP_ATS/target-evosuite/test-classes:/Users/tiagobarros/ATS_25-26/TP_ATS/target-evosuite/classes:/Users/tiagobarros/.m2/repository/org/evosuite/evosuite-standalone-runtime/1.0.6/evosuite-standalone-runtime-1.0.6.jar:/Users/tiagobarros/.m2/repository/org/junit/jupiter/junit-jupiter/5.10.2/junit-jupiter-5.10.2.jar:/Users/tiagobarros/.m2/repository/org/junit/jupiter/junit-jupiter-api/5.10.2/junit-jupiter-api-5.10.2.jar:/Users/tiagobarros/.m2/repository/org/opentest4j/opentest4j/1.3.0/opentest4j-1.3.0.jar:/Users/tiagobarros/.m2/repository/org/junit/platform/junit-platform-commons/1.10.2/junit-platform-commons-1.10.2.jar:/Users/tiagobarros/.m2/repository/org/junit/jupiter/junit-jupiter-params/5.10.2/junit-jupiter-params-5.10.2.jar:/Users/tiagobarros/.m2/repository/org/junit/jupiter/junit-jupiter-engine/5.10.2/junit-jupiter-engine-5.10.2.jar:/Users/tiagobarros/.m2/repository/junit/junit/4.13.2/junit-4.13.2.jar:/Users/tiagobarros/.m2/repository/org/hamcrest/hamcrest-core/1.3/hamcrest-core-1.3.jar:/Users/tiagobarros/.m2/repository/org/junit/vintage/junit-vintage-engine/5.10.2/junit-vintage-engine-5.10.2.jar:/Users/tiagobarros/.m2/repository/org/junit/platform/junit-platform-engine/1.10.2/junit-platform-engine-1.10.2.jar:/Users/tiagobarros/.m2/repository/org/apiguardian/apiguardian-api/1.1.2/apiguardian-api-1.1.2.jar:/Users/tiagobarros/.m2/repository/net/jqwik/jqwik/1.8.4/jqwik-1.8.4.jar:/Users/tiagobarros/.m2/repository/net/jqwik/jqwik-api/1.8.4/jqwik-api-1.8.4.jar:/Users/tiagobarros/.m2/repository/net/jqwik/jqwik-web/1.8.4/jqwik-web-1.8.4.jar:/Users/tiagobarros/.m2/repository/net/jqwik/jqwik-time/1.8.4/jqwik-time-1.8.4.jar:/Users/tiagobarros/.m2/repository/net/jqwik/jqwik-engine/1.8.4/jqwik-engine-1.8.4.jar:/Users/tiagobarros/.m2/repository/org/mockito/mockito-core/5.11.0/mockito-core-5.11.0.jar:/Users/tiagobarros/.m2/repository/net/bytebuddy/byte-buddy/1.14.12/byte-buddy-1.14.12.jar:/Users/tiagobarros/.m2/repository/net/bytebuddy/byte-buddy-agent/1.14.12/byte-buddy-agent-1.14.12.jar:/Users/tiagobarros/.m2/repository/org/objenesis/objenesis/3.3/objenesis-3.3.jar:"/>
+    <property name="sun.cpu.endian" value="little"/>
+    <property name="user.home" value="/Users/tiagobarros"/>
+    <property name="user.language" value="pt"/>
+    <property name="java.specification.vendor" value="Oracle Corporation"/>
+    <property name="java.version.date" value="2025-04-15"/>
+    <property name="java.home" value="/Users/tiagobarros/Library/Java/JavaVirtualMachines/ms-11.0.27/Contents/Home"/>
+    <property name="file.separator" value="/"/>
+    <property name="basedir" value="/Users/tiagobarros/ATS_25-26/TP_ATS"/>
+    <property name="java.vm.compressedOopsMode" value="Zero based"/>
+    <property name="line.separator" value="&#10;"/>
+    <property name="java.specification.name" value="Java Platform API Specification"/>
+    <property name="java.vm.specification.vendor" value="Oracle Corporation"/>
+    <property name="java.awt.graphicsenv" value="sun.awt.CGraphicsEnvironment"/>
+    <property name="surefire.real.class.path" value="/Users/tiagobarros/ATS_25-26/TP_ATS/target-evosuite/surefire/surefirebooter-20260504215221125_6.jar"/>
+    <property name="sun.management.compiler" value="HotSpot 64-Bit Tiered Compilers"/>
+    <property name="ftp.nonProxyHosts" value="local|*.local|169.254/16|*.169.254/16"/>
+    <property name="java.runtime.version" value="11.0.27+6-LTS"/>
+    <property name="user.name" value="tiagobarros"/>
+    <property name="path.separator" value=":"/>
+    <property name="os.version" value="26.3.1"/>
+    <property name="java.runtime.name" value="OpenJDK Runtime Environment"/>
+    <property name="file.encoding" value="UTF-8"/>
+    <property name="java.vm.name" value="OpenJDK 64-Bit Server VM"/>
+    <property name="java.vendor.version" value="Microsoft-11367290"/>
+    <property name="localRepository" value="/Users/tiagobarros/.m2/repository"/>
+    <property name="java.vendor.url.bug" value="https://github.com/microsoft/openjdk/issues"/>
+    <property name="java.io.tmpdir" value="/var/folders/hv/nk_r8y8s5h3_qghlgw2j5zpr0000gn/T/"/>
+    <property name="java.version" value="11.0.27"/>
+    <property name="user.dir" value="/Users/tiagobarros/ATS_25-26/TP_ATS"/>
+    <property name="os.arch" value="aarch64"/>
+    <property name="java.vm.specification.name" value="Java Virtual Machine Specification"/>
+    <property name="java.awt.printerjob" value="sun.lwawt.macosx.CPrinterJob"/>
+    <property name="sun.os.patch.level" value="unknown"/>
+    <property name="java.library.path" value="/Users/tiagobarros/Library/Java/Extensions:/Library/Java/Extensions:/Network/Library/Java/Extensions:/System/Library/Java/Extensions:/usr/lib/java:."/>
+    <property name="java.vm.info" value="mixed mode"/>
+    <property name="java.vendor" value="Microsoft"/>
+    <property name="java.vm.version" value="11.0.27+6-LTS"/>
+    <property name="java.specification.maintenance.version" value="3"/>
+    <property name="sun.io.unicode.encoding" value="UnicodeBig"/>
+    <property name="java.class.version" value="55.0"/>
+    <property name="socksNonProxyHosts" value="local|*.local|169.254/16|*.169.254/16"/>
+  </properties>
+  <testcase name="test000" classname="org.Model.SpotifUM_ESTest" time="0.002"/>
+  <testcase name="test001" classname="org.Model.SpotifUM_ESTest" time="0.001"/>
+  <testcase name="test002" classname="org.Model.SpotifUM_ESTest" time="0.0"/>
+  <testcase name="test003" classname="org.Model.SpotifUM_ESTest" time="0.0"/>
+  <testcase name="test004" classname="org.Model.SpotifUM_ESTest" time="0.001"/>
+  <testcase name="test005" classname="org.Model.SpotifUM_ESTest" time="0.0"/>
+  <testcase name="test006" classname="org.Model.SpotifUM_ESTest" time="0.0"/>
+  <testcase name="test007" classname="org.Model.SpotifUM_ESTest" time="0.001"/>
+  <testcase name="test008" classname="org.Model.SpotifUM_ESTest" time="0.0"/>
+  <testcase name="test009" classname="org.Model.SpotifUM_ESTest" time="0.0"/>
+  <testcase name="test010" classname="org.Model.SpotifUM_ESTest" time="0.001"/>
+  <testcase name="test011" classname="org.Model.SpotifUM_ESTest" time="0.0"/>
+  <testcase name="test012" classname="org.Model.SpotifUM_ESTest" time="0.0"/>
+  <testcase name="test013" classname="org.Model.SpotifUM_ESTest" time="0.0"/>
+  <testcase name="test014" classname="org.Model.SpotifUM_ESTest" time="0.0">
+    <skipped message="EvoSuite: Mockito/ByteBuddy mock failure"/>
+  </testcase>
+  <testcase name="test015" classname="org.Model.SpotifUM_ESTest" time="0.0"/>
+  <testcase name="test016" classname="org.Model.SpotifUM_ESTest" time="0.001"/>
+  <testcase name="test017" classname="org.Model.SpotifUM_ESTest" time="0.0">
+    <skipped message="EvoSuite: requires seeded playlists"/>
+  </testcase>
+  <testcase name="test018" classname="org.Model.SpotifUM_ESTest" time="0.0"/>
+  <testcase name="test019" classname="org.Model.SpotifUM_ESTest" time="0.0"/>
+  <testcase name="test020" classname="org.Model.SpotifUM_ESTest" time="0.0"/>
+  <testcase name="test021" classname="org.Model.SpotifUM_ESTest" time="0.001"/>
+  <testcase name="test022" classname="org.Model.SpotifUM_ESTest" time="0.0"/>
+  <testcase name="test023" classname="org.Model.SpotifUM_ESTest" time="0.0"/>
+  <testcase name="test024" classname="org.Model.SpotifUM_ESTest" time="0.0">
+    <skipped message="EvoSuite: depends on playlist order"/>
+  </testcase>
+  <testcase name="test025" classname="org.Model.SpotifUM_ESTest" time="0.0">
+    <skipped message="EvoSuite: Mockito/ByteBuddy mock failure"/>
+  </testcase>
+  <testcase name="test026" classname="org.Model.SpotifUM_ESTest" time="0.001"/>
+  <testcase name="test027" classname="org.Model.SpotifUM_ESTest" time="0.0"/>
+  <testcase name="test028" classname="org.Model.SpotifUM_ESTest" time="0.0"/>
+  <testcase name="test029" classname="org.Model.SpotifUM_ESTest" time="0.0"/>
+  <testcase name="test030" classname="org.Model.SpotifUM_ESTest" time="0.0">
+    <skipped message="EvoSuite: Mockito/ByteBuddy mock failure"/>
+  </testcase>
+  <testcase name="test031" classname="org.Model.SpotifUM_ESTest" time="0.0"/>
+  <testcase name="test032" classname="org.Model.SpotifUM_ESTest" time="0.001"/>
+  <testcase name="test033" classname="org.Model.SpotifUM_ESTest" time="0.0"/>
+  <testcase name="test034" classname="org.Model.SpotifUM_ESTest" time="0.0">
+    <skipped message="EvoSuite: depends on playlist count/order"/>
+  </testcase>
+  <testcase name="test035" classname="org.Model.SpotifUM_ESTest" time="0.0"/>
+  <testcase name="test036" classname="org.Model.SpotifUM_ESTest" time="0.0"/>
+  <testcase name="test037" classname="org.Model.SpotifUM_ESTest" time="0.0">
+    <skipped message="EvoSuite: requires seeded playlists"/>
+  </testcase>
+  <testcase name="test038" classname="org.Model.SpotifUM_ESTest" time="0.0">
+    <skipped message="EvoSuite: requires seeded playlists"/>
+  </testcase>
+  <testcase name="test039" classname="org.Model.SpotifUM_ESTest" time="0.0"/>
+  <testcase name="test040" classname="org.Model.SpotifUM_ESTest" time="0.0"/>
+  <testcase name="test041" classname="org.Model.SpotifUM_ESTest" time="0.0"/>
+  <testcase name="test042" classname="org.Model.SpotifUM_ESTest" time="0.0"/>
+  <testcase name="test043" classname="org.Model.SpotifUM_ESTest" time="0.0"/>
+  <testcase name="test044" classname="org.Model.SpotifUM_ESTest" time="0.0"/>
+  <testcase name="test045" classname="org.Model.SpotifUM_ESTest" time="0.0"/>
+  <testcase name="test046" classname="org.Model.SpotifUM_ESTest" time="0.0"/>
+  <testcase name="test047" classname="org.Model.SpotifUM_ESTest" time="0.001"/>
+  <testcase name="test048" classname="org.Model.SpotifUM_ESTest" time="0.0"/>
+  <testcase name="test049" classname="org.Model.SpotifUM_ESTest" time="0.0"/>
+  <testcase name="test050" classname="org.Model.SpotifUM_ESTest" time="0.0">
+    <skipped message="EvoSuite: Mockito/ByteBuddy mock failure"/>
+  </testcase>
+  <testcase name="test051" classname="org.Model.SpotifUM_ESTest" time="0.0"/>
+  <testcase name="test052" classname="org.Model.SpotifUM_ESTest" time="0.001"/>
+  <testcase name="test053" classname="org.Model.SpotifUM_ESTest" time="0.0"/>
+  <testcase name="test054" classname="org.Model.SpotifUM_ESTest" time="0.0"/>
+  <testcase name="test055" classname="org.Model.SpotifUM_ESTest" time="0.0"/>
+  <testcase name="test056" classname="org.Model.SpotifUM_ESTest" time="0.001"/>
+  <testcase name="test057" classname="org.Model.SpotifUM_ESTest" time="0.0"/>
+  <testcase name="test058" classname="org.Model.SpotifUM_ESTest" time="0.0"/>
+  <testcase name="test059" classname="org.Model.SpotifUM_ESTest" time="0.0"/>
+  <testcase name="test060" classname="org.Model.SpotifUM_ESTest" time="0.001"/>
+  <testcase name="test061" classname="org.Model.SpotifUM_ESTest" time="0.004"/>
+  <testcase name="test062" classname="org.Model.SpotifUM_ESTest" time="0.0"/>
+  <testcase name="test063" classname="org.Model.SpotifUM_ESTest" time="0.0"/>
+  <testcase name="test064" classname="org.Model.SpotifUM_ESTest" time="0.001"/>
+  <testcase name="test065" classname="org.Model.SpotifUM_ESTest" time="0.0"/>
+  <testcase name="test066" classname="org.Model.SpotifUM_ESTest" time="0.0"/>
+  <testcase name="test067" classname="org.Model.SpotifUM_ESTest" time="0.0"/>
+  <testcase name="test068" classname="org.Model.SpotifUM_ESTest" time="0.0"/>
+  <testcase name="test069" classname="org.Model.SpotifUM_ESTest" time="0.0"/>
+  <testcase name="test070" classname="org.Model.SpotifUM_ESTest" time="0.0"/>
+  <testcase name="test071" classname="org.Model.SpotifUM_ESTest" time="0.0"/>
+  <testcase name="test072" classname="org.Model.SpotifUM_ESTest" time="0.0"/>
+  <testcase name="test073" classname="org.Model.SpotifUM_ESTest" time="0.0"/>
+  <testcase name="test074" classname="org.Model.SpotifUM_ESTest" time="0.0"/>
+  <testcase name="test075" classname="org.Model.SpotifUM_ESTest" time="0.0"/>
+  <testcase name="test076" classname="org.Model.SpotifUM_ESTest" time="0.0"/>
+  <testcase name="test077" classname="org.Model.SpotifUM_ESTest" time="0.0"/>
+  <testcase name="test078" classname="org.Model.SpotifUM_ESTest" time="0.0"/>
+  <testcase name="test079" classname="org.Model.SpotifUM_ESTest" time="0.0"/>
+  <testcase name="test080" classname="org.Model.SpotifUM_ESTest" time="0.001"/>
+  <testcase name="test081" classname="org.Model.SpotifUM_ESTest" time="0.0"/>
+  <testcase name="test082" classname="org.Model.SpotifUM_ESTest" time="0.001"/>
+  <testcase name="test083" classname="org.Model.SpotifUM_ESTest" time="0.0"/>
+  <testcase name="test084" classname="org.Model.SpotifUM_ESTest" time="0.0"/>
+  <testcase name="test085" classname="org.Model.SpotifUM_ESTest" time="0.001"/>
+  <testcase name="test086" classname="org.Model.SpotifUM_ESTest" time="0.002"/>
+  <testcase name="test087" classname="org.Model.SpotifUM_ESTest" time="0.0"/>
+  <testcase name="test088" classname="org.Model.SpotifUM_ESTest" time="0.001"/>
+  <testcase name="test089" classname="org.Model.SpotifUM_ESTest" time="0.0"/>
+  <testcase name="test090" classname="org.Model.SpotifUM_ESTest" time="0.0"/>
+  <testcase name="test091" classname="org.Model.SpotifUM_ESTest" time="0.0"/>
+  <testcase name="test092" classname="org.Model.SpotifUM_ESTest" time="0.0"/>
+  <testcase name="test093" classname="org.Model.SpotifUM_ESTest" time="0.001"/>
+  <testcase name="test094" classname="org.Model.SpotifUM_ESTest" time="0.0"/>
+  <testcase name="test095" classname="org.Model.SpotifUM_ESTest" time="0.0"/>
+  <testcase name="test096" classname="org.Model.SpotifUM_ESTest" time="0.0"/>
+  <testcase name="test097" classname="org.Model.SpotifUM_ESTest" time="0.001"/>
+  <testcase name="test098" classname="org.Model.SpotifUM_ESTest" time="0.0">
+    <skipped message="EvoSuite: depends on playlist order"/>
+  </testcase>
+  <testcase name="test099" classname="org.Model.SpotifUM_ESTest" time="0.0"/>
+  <testcase name="test100" classname="org.Model.SpotifUM_ESTest" time="0.0"/>
+  <testcase name="test101" classname="org.Model.SpotifUM_ESTest" time="0.0"/>
+  <testcase name="test102" classname="org.Model.SpotifUM_ESTest" time="0.001"/>
+  <testcase name="test103" classname="org.Model.SpotifUM_ESTest" time="0.0"/>
+  <testcase name="test104" classname="org.Model.SpotifUM_ESTest" time="0.0"/>
+  <testcase name="test105" classname="org.Model.SpotifUM_ESTest" time="0.0"/>
+  <testcase name="test106" classname="org.Model.SpotifUM_ESTest" time="0.001"/>
+  <testcase name="test107" classname="org.Model.SpotifUM_ESTest" time="0.0"/>
+  <testcase name="test108" classname="org.Model.SpotifUM_ESTest" time="0.0"/>
+  <testcase name="test109" classname="org.Model.SpotifUM_ESTest" time="0.0"/>
+  <testcase name="test110" classname="org.Model.SpotifUM_ESTest" time="0.001"/>
+  <testcase name="test111" classname="org.Model.SpotifUM_ESTest" time="0.0"/>
+  <testcase name="test112" classname="org.Model.SpotifUM_ESTest" time="0.001"/>
+  <testcase name="test113" classname="org.Model.SpotifUM_ESTest" time="0.0"/>
+  <testcase name="test114" classname="org.Model.SpotifUM_ESTest" time="0.0"/>
+  <testcase name="test115" classname="org.Model.SpotifUM_ESTest" time="0.0"/>
+  <testcase name="test116" classname="org.Model.SpotifUM_ESTest" time="0.001"/>
+  <testcase name="test117" classname="org.Model.SpotifUM_ESTest" time="0.0"/>
+  <testcase name="test118" classname="org.Model.SpotifUM_ESTest" time="0.0"/>
+  <testcase name="test119" classname="org.Model.SpotifUM_ESTest" time="0.0"/>
+  <testcase name="test120" classname="org.Model.SpotifUM_ESTest" time="0.001"/>
+  <testcase name="test121" classname="org.Model.SpotifUM_ESTest" time="0.0"/>
+  <testcase name="test122" classname="org.Model.SpotifUM_ESTest" time="0.0"/>
+  <testcase name="test123" classname="org.Model.SpotifUM_ESTest" time="0.0"/>
+  <testcase name="test124" classname="org.Model.SpotifUM_ESTest" time="0.001"/>
+  <testcase name="test125" classname="org.Model.SpotifUM_ESTest" time="0.0"/>
+  <testcase name="test126" classname="org.Model.SpotifUM_ESTest" time="0.0"/>
+  <testcase name="test127" classname="org.Model.SpotifUM_ESTest" time="0.0"/>
+  <testcase name="test128" classname="org.Model.SpotifUM_ESTest" time="0.001"/>
+  <testcase name="test129" classname="org.Model.SpotifUM_ESTest" time="0.0"/>
+  <testcase name="test130" classname="org.Model.SpotifUM_ESTest" time="0.0"/>
+  <testcase name="test131" classname="org.Model.SpotifUM_ESTest" time="0.0"/>
+  <testcase name="test132" classname="org.Model.SpotifUM_ESTest" time="0.0"/>
+  <testcase name="test133" classname="org.Model.SpotifUM_ESTest" time="0.0"/>
+  <testcase name="test134" classname="org.Model.SpotifUM_ESTest" time="0.0"/>
+  <testcase name="test135" classname="org.Model.SpotifUM_ESTest" time="0.0"/>
+  <testcase name="test136" classname="org.Model.SpotifUM_ESTest" time="0.0"/>
+  <testcase name="test137" classname="org.Model.SpotifUM_ESTest" time="0.0"/>
+  <testcase name="test138" classname="org.Model.SpotifUM_ESTest" time="0.0"/>
+  <testcase name="test139" classname="org.Model.SpotifUM_ESTest" time="0.0"/>
+  <testcase name="test140" classname="org.Model.SpotifUM_ESTest" time="0.001"/>
+  <testcase name="test141" classname="org.Model.SpotifUM_ESTest" time="0.0"/>
+  <testcase name="test142" classname="org.Model.SpotifUM_ESTest" time="0.0"/>
+  <testcase name="test143" classname="org.Model.SpotifUM_ESTest" time="0.0"/>
+  <testcase name="test144" classname="org.Model.SpotifUM_ESTest" time="0.0"/>
+  <testcase name="test145" classname="org.Model.SpotifUM_ESTest" time="0.001"/>
+  <testcase name="test146" classname="org.Model.SpotifUM_ESTest" time="0.0"/>
+  <testcase name="test147" classname="org.Model.SpotifUM_ESTest" time="0.0"/>
+  <testcase name="test148" classname="org.Model.SpotifUM_ESTest" time="0.0"/>
+  <testcase name="test149" classname="org.Model.SpotifUM_ESTest" time="0.0"/>
+  <testcase name="test150" classname="org.Model.SpotifUM_ESTest" time="0.0"/>
+  <testcase name="test151" classname="org.Model.SpotifUM_ESTest" time="0.001"/>
+  <testcase name="test152" classname="org.Model.SpotifUM_ESTest" time="0.0"/>
+  <testcase name="test153" classname="org.Model.SpotifUM_ESTest" time="0.0"/>
+  <testcase name="test154" classname="org.Model.SpotifUM_ESTest" time="0.0"/>
+  <testcase name="test155" classname="org.Model.SpotifUM_ESTest" time="0.0"/>
+  <testcase name="test156" classname="org.Model.SpotifUM_ESTest" time="0.0"/>
+</testsuite>
