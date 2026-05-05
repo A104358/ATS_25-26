@@ -305,10 +305,10 @@ public class Controller {
     public String listUserPlaylists(){
         try {
 <span class="fc" id="L307">            String playlists = this.getSpotifUM().listCurrentUserPlaylists();</span>
-<span class="fc bfc" id="L308" title="All 2 branches covered.">            if (playlists.isEmpty()) {</span>
+<span class="pc bpc" id="L308" title="1 of 2 branches missed.">            if (playlists.isEmpty()) {</span>
 <span class="fc" id="L309">                return &quot;📭 Não existem playlists.&quot;;</span>
             } else {
-<span class="fc" id="L311">                return &quot;📚 As tuas playlists:\n&quot; + playlists;</span>
+<span class="nc" id="L311">                return &quot;📚 As tuas playlists:\n&quot; + playlists;</span>
             }
 <span class="fc" id="L313">        } catch (Exception e) {</span>
 <span class="fc" id="L314">            return &quot;❌ Erro ao listar playlists: &quot; + e.getMessage();</span>
@@ -322,10 +322,10 @@ public class Controller {
     public String listPublicPlaylists(){
         try {
 <span class="fc" id="L324">            String playlists = getSpotifUM().listPublicPlaylists();</span>
-<span class="fc bfc" id="L325" title="All 2 branches covered.">            if (playlists.isEmpty()) {</span>
+<span class="pc bpc" id="L325" title="1 of 2 branches missed.">            if (playlists.isEmpty()) {</span>
 <span class="fc" id="L326">                return &quot;📭 Não existem playlists públicas.&quot;;</span>
             } else {
-<span class="fc" id="L328">                return &quot;📚 Playlists Públicas:\n&quot; + playlists;</span>
+<span class="nc" id="L328">                return &quot;📚 Playlists Públicas:\n&quot; + playlists;</span>
             }
 <span class="fc" id="L330">        } catch (Exception e) {</span>
 <span class="fc" id="L331">            return &quot;❌ Erro ao listar playlists: &quot; + e.getMessage();</span>

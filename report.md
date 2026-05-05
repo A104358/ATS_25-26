@@ -96,3 +96,11 @@ Os resultados revelam um padrão consistente com a complexidade de cada classe. 
 Ex: Autenticar um utilizador antes de chamar métodos que o requerem, ou garantir que um álbum existe antes de adicionar uma música.
 
 O teste instável detectado na classe Music é um exemplo concreto do valor do EvoSuite: encontrou um edge case que os testes manuais não contemplaram.
+
+### Combinar os testes unitários com os testes gerados pelo EvoSuite
+
+Criamos um novo perfil maven no __pom.xml__ para correr os testes unitarios e os testes do EvoSuite para verificarmos a cobertura total do porjeto após a utilização desta ferramenta, obtivemos os seguintes resultados:
+
+![alt text](images/jacoco3.png)
+
+Conseguimos veririficar que a cobertura total passou de 55% para 75% e a cobertura de branches passou de 54% para 68%

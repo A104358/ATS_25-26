@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testsuite xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="https://maven.apache.org/surefire/maven-surefire-plugin/xsd/surefire-test-report-3.0.xsd" version="3.0" name="org.Controller.ControllerTest" time="0.04" tests="45" errors="0" skipped="0" failures="0">
+<testsuite xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="https://maven.apache.org/surefire/maven-surefire-plugin/xsd/surefire-test-report-3.0.xsd" version="3.0" name="org.Controller.ControllerTest" time="0.06" tests="45" errors="0" skipped="0" failures="0">
   <properties>
     <property name="gopherProxySet" value="false"/>
     <property name="awt.toolkit" value="sun.lwawt.macosx.LWCToolkit"/>
@@ -18,7 +18,7 @@
     <property name="sun.java.launcher" value="SUN_STANDARD"/>
     <property name="user.country" value="PT"/>
     <property name="sun.boot.library.path" value="/Users/tiagobarros/Library/Java/JavaVirtualMachines/ms-11.0.27/Contents/Home/lib"/>
-    <property name="sun.java.command" value="/Users/tiagobarros/ATS_25-26/TP_ATS/target-evosuite/surefire/surefirebooter-20260504215221125_3.jar /Users/tiagobarros/ATS_25-26/TP_ATS/target-evosuite/surefire 2026-05-04T21-52-21_074-jvmRun1 surefire-20260504215221125_1tmp surefire_0-20260504215221125_2tmp"/>
+    <property name="sun.java.command" value="/Users/tiagobarros/ATS_25-26/TP_ATS/target-evosuite/surefire/surefirebooter-20260505162450294_3.jar /Users/tiagobarros/ATS_25-26/TP_ATS/target-evosuite/surefire 2026-05-05T16-24-50_208-jvmRun1 surefire-20260505162450294_1tmp surefire_0-20260505162450294_2tmp"/>
     <property name="http.nonProxyHosts" value="local|*.local|169.254/16|*.169.254/16"/>
     <property name="jdk.debug" value="release"/>
     <property name="surefire.test.class.path" value="/Users/tiagobarros/ATS_25-26/TP_ATS/target-evosuite/test-classes:/Users/tiagobarros/ATS_25-26/TP_ATS/target-evosuite/classes:/Users/tiagobarros/.m2/repository/org/junit/jupiter/junit-jupiter/5.10.2/junit-jupiter-5.10.2.jar:/Users/tiagobarros/.m2/repository/org/junit/jupiter/junit-jupiter-api/5.10.2/junit-jupiter-api-5.10.2.jar:/Users/tiagobarros/.m2/repository/org/opentest4j/opentest4j/1.3.0/opentest4j-1.3.0.jar:/Users/tiagobarros/.m2/repository/org/junit/platform/junit-platform-commons/1.10.2/junit-platform-commons-1.10.2.jar:/Users/tiagobarros/.m2/repository/org/junit/jupiter/junit-jupiter-params/5.10.2/junit-jupiter-params-5.10.2.jar:/Users/tiagobarros/.m2/repository/org/junit/jupiter/junit-jupiter-engine/5.10.2/junit-jupiter-engine-5.10.2.jar:/Users/tiagobarros/.m2/repository/junit/junit/4.13.2/junit-4.13.2.jar:/Users/tiagobarros/.m2/repository/org/hamcrest/hamcrest-core/1.3/hamcrest-core-1.3.jar:/Users/tiagobarros/.m2/repository/org/junit/vintage/junit-vintage-engine/5.10.2/junit-vintage-engine-5.10.2.jar:/Users/tiagobarros/.m2/repository/org/junit/platform/junit-platform-engine/1.10.2/junit-platform-engine-1.10.2.jar:/Users/tiagobarros/.m2/repository/org/apiguardian/apiguardian-api/1.1.2/apiguardian-api-1.1.2.jar:/Users/tiagobarros/.m2/repository/net/jqwik/jqwik/1.8.4/jqwik-1.8.4.jar:/Users/tiagobarros/.m2/repository/net/jqwik/jqwik-api/1.8.4/jqwik-api-1.8.4.jar:/Users/tiagobarros/.m2/repository/net/jqwik/jqwik-web/1.8.4/jqwik-web-1.8.4.jar:/Users/tiagobarros/.m2/repository/net/jqwik/jqwik-time/1.8.4/jqwik-time-1.8.4.jar:/Users/tiagobarros/.m2/repository/net/jqwik/jqwik-engine/1.8.4/jqwik-engine-1.8.4.jar:/Users/tiagobarros/.m2/repository/org/mockito/mockito-core/5.11.0/mockito-core-5.11.0.jar:/Users/tiagobarros/.m2/repository/net/bytebuddy/byte-buddy/1.14.12/byte-buddy-1.14.12.jar:/Users/tiagobarros/.m2/repository/net/bytebuddy/byte-buddy-agent/1.14.12/byte-buddy-agent-1.14.12.jar:/Users/tiagobarros/.m2/repository/org/objenesis/objenesis/3.3/objenesis-3.3.jar:"/>
@@ -35,7 +35,7 @@
     <property name="java.specification.name" value="Java Platform API Specification"/>
     <property name="java.vm.specification.vendor" value="Oracle Corporation"/>
     <property name="java.awt.graphicsenv" value="sun.awt.CGraphicsEnvironment"/>
-    <property name="surefire.real.class.path" value="/Users/tiagobarros/ATS_25-26/TP_ATS/target-evosuite/surefire/surefirebooter-20260504215221125_3.jar"/>
+    <property name="surefire.real.class.path" value="/Users/tiagobarros/ATS_25-26/TP_ATS/target-evosuite/surefire/surefirebooter-20260505162450294_3.jar"/>
     <property name="sun.management.compiler" value="HotSpot 64-Bit Tiered Compilers"/>
     <property name="ftp.nonProxyHosts" value="local|*.local|169.254/16|*.169.254/16"/>
     <property name="java.runtime.version" value="11.0.27+6-LTS"/>
@@ -65,48 +65,48 @@
     <property name="socksNonProxyHosts" value="local|*.local|169.254/16|*.169.254/16"/>
   </properties>
   <testcase name="testMusicNotExists" classname="org.Controller.ControllerTest" time="0.003"/>
-  <testcase name="testAlbumExists" classname="org.Controller.ControllerTest" time="0.003"/>
+  <testcase name="testAlbumExists" classname="org.Controller.ControllerTest" time="0.004"/>
   <testcase name="testGetUserWithMostPlaylists" classname="org.Controller.ControllerTest" time="0.001"/>
   <testcase name="testAlbumNotExists" classname="org.Controller.ControllerTest" time="0.0"/>
-  <testcase name="testAddNewUserSuccess" classname="org.Controller.ControllerTest" time="0.0"/>
-  <testcase name="testCopyConstructor" classname="org.Controller.ControllerTest" time="0.001"/>
-  <testcase name="testGetMostReproducedArtist" classname="org.Controller.ControllerTest" time="0.0"/>
-  <testcase name="testGetCurrentUser" classname="org.Controller.ControllerTest" time="0.008"/>
+  <testcase name="testAddNewUserSuccess" classname="org.Controller.ControllerTest" time="0.001"/>
+  <testcase name="testCopyConstructor" classname="org.Controller.ControllerTest" time="0.0"/>
+  <testcase name="testGetMostReproducedArtist" classname="org.Controller.ControllerTest" time="0.001"/>
+  <testcase name="testGetCurrentUser" classname="org.Controller.ControllerTest" time="0.011"/>
   <testcase name="testGetUserWithMostPoints" classname="org.Controller.ControllerTest" time="0.001"/>
-  <testcase name="testGetMostReproducedGenre" classname="org.Controller.ControllerTest" time="0.0"/>
-  <testcase name="testGetMostReproducedMusic" classname="org.Controller.ControllerTest" time="0.0"/>
+  <testcase name="testGetMostReproducedGenre" classname="org.Controller.ControllerTest" time="0.001"/>
+  <testcase name="testGetMostReproducedMusic" classname="org.Controller.ControllerTest" time="0.001"/>
   <testcase name="testLoginSuccess" classname="org.Controller.ControllerTest" time="0.0"/>
   <testcase name="testExportModelPathInvalido" classname="org.Controller.ControllerTest" time="0.001"/>
   <testcase name="testListAllMusicsEmpty" classname="org.Controller.ControllerTest" time="0.001"/>
-  <testcase name="testLoginNonExistentUser" classname="org.Controller.ControllerTest" time="0.0"/>
+  <testcase name="testLoginNonExistentUser" classname="org.Controller.ControllerTest" time="0.001"/>
   <testcase name="testListAllMusicsWithMusic" classname="org.Controller.ControllerTest" time="0.001"/>
-  <testcase name="testListUserPlaylistsWithoutLogin" classname="org.Controller.ControllerTest" time="0.0"/>
-  <testcase name="testListPublicPlaylists" classname="org.Controller.ControllerTest" time="0.001"/>
-  <testcase name="testListAllMusicsComDuasMusicas" classname="org.Controller.ControllerTest" time="0.0"/>
+  <testcase name="testListUserPlaylistsWithoutLogin" classname="org.Controller.ControllerTest" time="0.001"/>
+  <testcase name="testListPublicPlaylists" classname="org.Controller.ControllerTest" time="0.0"/>
+  <testcase name="testListAllMusicsComDuasMusicas" classname="org.Controller.ControllerTest" time="0.001"/>
   <testcase name="testPremiumTopUserAccessToFavorites" classname="org.Controller.ControllerTest" time="0.001"/>
-  <testcase name="testAddNewUserDuplicate" classname="org.Controller.ControllerTest" time="0.0"/>
-  <testcase name="testAddMusicDuplicate" classname="org.Controller.ControllerTest" time="0.0"/>
-  <testcase name="testSetFreePlan" classname="org.Controller.ControllerTest" time="0.0"/>
-  <testcase name="testGetUserWithMostReproductionsComDatasSemUtilizadores" classname="org.Controller.ControllerTest" time="0.001"/>
-  <testcase name="testGetCurrentUserPlan" classname="org.Controller.ControllerTest" time="0.0"/>
-  <testcase name="testSetPremiumTopPlan" classname="org.Controller.ControllerTest" time="0.001"/>
+  <testcase name="testAddNewUserDuplicate" classname="org.Controller.ControllerTest" time="0.001"/>
+  <testcase name="testAddMusicDuplicate" classname="org.Controller.ControllerTest" time="0.001"/>
+  <testcase name="testSetFreePlan" classname="org.Controller.ControllerTest" time="0.001"/>
+  <testcase name="testGetUserWithMostReproductionsComDatasSemUtilizadores" classname="org.Controller.ControllerTest" time="0.002"/>
+  <testcase name="testGetCurrentUserPlan" classname="org.Controller.ControllerTest" time="0.001"/>
+  <testcase name="testSetPremiumTopPlan" classname="org.Controller.ControllerTest" time="0.0"/>
   <testcase name="testListAllAlbums" classname="org.Controller.ControllerTest" time="0.0"/>
-  <testcase name="testMusicExists" classname="org.Controller.ControllerTest" time="0.001"/>
-  <testcase name="testCanCurrentUserChooseWhatToPlay" classname="org.Controller.ControllerTest" time="0.0"/>
+  <testcase name="testMusicExists" classname="org.Controller.ControllerTest" time="0.0"/>
+  <testcase name="testCanCurrentUserChooseWhatToPlay" classname="org.Controller.ControllerTest" time="0.001"/>
   <testcase name="testCurrentUserAccessToFavorites" classname="org.Controller.ControllerTest" time="0.0"/>
   <testcase name="testListAllGenres" classname="org.Controller.ControllerTest" time="0.001"/>
   <testcase name="testLoginWrongPassword" classname="org.Controller.ControllerTest" time="0.0"/>
-  <testcase name="testPremiumUserCanSkip" classname="org.Controller.ControllerTest" time="0.001"/>
-  <testcase name="testCreateAlbumSuccess" classname="org.Controller.ControllerTest" time="0.0"/>
-  <testcase name="testGetMostReproducedMusicSemMusicas" classname="org.Controller.ControllerTest" time="0.001"/>
+  <testcase name="testPremiumUserCanSkip" classname="org.Controller.ControllerTest" time="0.0"/>
+  <testcase name="testCreateAlbumSuccess" classname="org.Controller.ControllerTest" time="0.001"/>
+  <testcase name="testGetMostReproducedMusicSemMusicas" classname="org.Controller.ControllerTest" time="0.0"/>
   <testcase name="testChangeCurrentUserEmail" classname="org.Controller.ControllerTest" time="0.0"/>
-  <testcase name="testCanCurrentUserSkip" classname="org.Controller.ControllerTest" time="0.0"/>
+  <testcase name="testCanCurrentUserSkip" classname="org.Controller.ControllerTest" time="0.002"/>
   <testcase name="testImportModelFicheiroInexistente" classname="org.Controller.ControllerTest" time="0.001"/>
-  <testcase name="testChangeCurrentUserPassword" classname="org.Controller.ControllerTest" time="0.001"/>
+  <testcase name="testChangeCurrentUserPassword" classname="org.Controller.ControllerTest" time="0.0"/>
   <testcase name="testSetPremiumBasePlan" classname="org.Controller.ControllerTest" time="0.0"/>
-  <testcase name="testGetMostReproducedArtistSemDados" classname="org.Controller.ControllerTest" time="0.001"/>
+  <testcase name="testGetMostReproducedArtistSemDados" classname="org.Controller.ControllerTest" time="0.0"/>
   <testcase name="testAddMusicSuccess" classname="org.Controller.ControllerTest" time="0.0"/>
   <testcase name="testDefaultConstructor" classname="org.Controller.ControllerTest" time="0.001"/>
   <testcase name="testAddMusicSemAlbumPreExistenteFalha" classname="org.Controller.ControllerTest" time="0.0"/>
-  <testcase name="testIsPasswordCorrect" classname="org.Controller.ControllerTest" time="0.0"/>
+  <testcase name="testIsPasswordCorrect" classname="org.Controller.ControllerTest" time="0.001"/>
 </testsuite>
