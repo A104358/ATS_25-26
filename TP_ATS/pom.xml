@@ -12,7 +12,7 @@
     <packaging>jar</packaging>
 
     <properties>
-        <maven.compiler.release>21</maven.compiler.release>
+        <maven.compiler.release>11</maven.compiler.release>
         <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
         <mockito.version>5.11.0</mockito.version>
     </properties>
@@ -77,6 +77,16 @@
 
     <build>
         <plugins>
+
+            <!-- Compiler config to avoid newer class file versions in PIT -->
+            <plugin>
+                <groupId>org.apache.maven.plugins</groupId>
+                <artifactId>maven-compiler-plugin</artifactId>
+                <version>3.11.0</version>
+                <configuration>
+                    <release>${maven.compiler.release}</release>
+                </configuration>
+            </plugin>
 
             <!-- Testes JUnit 5 (exclui ESTest) -->
             <plugin>

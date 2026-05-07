@@ -104,3 +104,71 @@ Criamos um novo perfil maven no __pom.xml__ para correr os testes unitarios e os
 ![alt text](images/jacoco3.png)
 
 Conseguimos veririficar que a cobertura total passou de 55% para 75% e a cobertura de branches passou de 54% para 68%
+
+### PIT - Mutation Testing
+
+O objectivo do PIT e avaliar a qualidade dos testes atraves de mutantes: pequenas alteracoes no bytecode que simulam erros comuns. Um teste eficaz deve detetar esses mutantes e falhar. A metrica principal e o mutation score, complementada pela cobertura e pelo numero de mutantes equivalentes.
+
+**Configuracao aplicada (pom.xml):**
+- Plugin `pitest-maven` com suporte a JUnit 5.
+- Pacotes alvo: `org.Model`, `org.Controller`, `org.View`, `org.Utils`.
+- Exclusao explicita: `ProfileMenuTest`
+- Suite de testes: unitarios + EvoSuite.
+
+**Comando de execucao:**
+- `mvn pitest:mutationCoverage` 
+
+### Resultados PIT:
+
+
+
+![alt text](images/pit1.png)
+
+
+O relatorio HTML do PIT (Figura acima) mostra 31 classes analisadas, com 64% de line coverage, 45% de mutation coverage e 71% de test strength. Em termos globais, o resultado e mediano, com bom desempenho em classes de modelo mais coesas e menor desempenho nas classes de interface.
+
+**Analise por pacote (resumo do relatorio):**
+- **org.Model.Album, org.Model.Music, org.Model.Plan** com cobertura alta (93%-100%) e mutation coverage entre 90% e 100%.
+- **org.Model.Playlist** manteve boa cobertura de linhas (93%) mas mutation coverage mais baixo (68%), indicando necessidade de asserts mais fortes em regras de negocio.
+- **org.Model.User** tem cobertura media (65%) mas mutation coverage mais alto (72%), sugerindo testes eficazes apesar de caminhos ainda nao exercitados.
+- **org.Controller** e **org.View** apresentam os piores resultados (mutation coverage 28%), refletindo fluxos de interface mais dificeis de automatizar.
+- **org.Utils** ficou abaixo do esperado (31%), influenciado por dependencias externas e casos de erro dificilmente simulaveis.
+
+
+**Metricas globais:**
+- Mutantes gerados: 856; mortos: 381; sem cobertura: 316.
+- Line coverage (classes mutadas): 1208/1901 (64%).
+- Test strength: 71%.
+- Testes executados: 989 (1.16 testes por mutante).
+- Tempo total: 6m09s.
+
+**Analise inicial de sobreviventes:**
+- `VoidMethodCallMutator` teve a menor taxa de eliminacao (27%) e 154 sem cobertura, sugerindo metodos com efeitos laterais pouco exercitados.
+- `ConditionalsBoundaryMutator` (21%) e `IncrementsMutator` (25%) indicam falta de testes de limites e de validacao de contadores.
+- `MathMutator` (38%) aponta para calculos sem asserts fortes em varias rotas de execucao.
+
+### QuickCheck - Property Based Testing
+
+Para teste em larga escala recorremos a property based testing com `jqwik` (estilo QuickCheck). Foi criada uma classe JUnit com propriedades simples, mas representativas, que geram automaticamente dezenas de casos por propriedade (100 geracoes por teste).
+
+**Geradores usados (resumo):**
+- Strings ASCII curtas para nomes e campos textuais.
+- Duracoes inteiras entre 0 e 600 segundos.
+- Listas de musicas com nomes unicos para evitar conflitos.
+- Pontos iniciais entre 0 e 10 000 para testar planos.
+
+**Propriedades definidas:**
+- **Music.play:** cada execucao incrementa o contador de reproduções e devolve a letra original.
+- **Playlist (add/remove):** adicionar e remover uma musica mantém a consistência do tamanho da playlist.
+- **PlaylistCreator.createRandomPlaylist:** o resultado usa apenas músicas existentes e o tamanho fica entre 1 e o total disponivel.
+- **PlaylistCreator.createGenrePlaylist:** todas as musicas tem o genero pedido e a duracao total nao excede o limite.
+- **PlanFree.addPoints:** cada chamada acrescenta exatamente 5 pontos.
+
+**Comando de execucao:**
+- `mvn test` (ou `mvn -Dtest=QuickCheckPropertyTest test`).
+
+**Resultados (ultima execucao):**
+- 5 propriedades executadas, 0 falhas, 0 erros.
+- 100 geracoes por propriedade (tries=100), com execucao total ~0.4s.
+- O log indica que a geracao de edge cases excedeu o numero de tentativas, o que e esperado quando o numero de casos limite e alto; nao afetou o sucesso dos testes.
+
