@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testsuite xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="https://maven.apache.org/surefire/maven-surefire-plugin/xsd/surefire-test-report-3.0.xsd" version="3.0" name="org.Model.SpotifUMExtendedTest" time="0.188" tests="46" errors="0" skipped="0" failures="0">
+<testsuite xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="https://maven.apache.org/surefire/maven-surefire-plugin/xsd/surefire-test-report-3.0.xsd" version="3.0" name="org.Model.SpotifUMExtendedTest" time="0.031" tests="46" errors="0" skipped="0" failures="0">
   <properties>
     <property name="gopherProxySet" value="false"/>
     <property name="awt.toolkit" value="sun.lwawt.macosx.LWCToolkit"/>
@@ -18,7 +18,7 @@
     <property name="sun.java.launcher" value="SUN_STANDARD"/>
     <property name="user.country" value="PT"/>
     <property name="sun.boot.library.path" value="/Users/tiagobarros/Library/Java/JavaVirtualMachines/ms-11.0.27/Contents/Home/lib"/>
-    <property name="sun.java.command" value="/Users/tiagobarros/ATS_25-26/TP_ATS/target-evosuite/surefire/surefirebooter-20260505162450294_3.jar /Users/tiagobarros/ATS_25-26/TP_ATS/target-evosuite/surefire 2026-05-05T16-24-50_208-jvmRun1 surefire-20260505162450294_1tmp surefire_0-20260505162450294_2tmp"/>
+    <property name="sun.java.command" value="/Users/tiagobarros/ATS_25-26/TP_ATS/target-evosuite/surefire/surefirebooter-20260508164627951_3.jar /Users/tiagobarros/ATS_25-26/TP_ATS/target-evosuite/surefire 2026-05-08T16-46-27_879-jvmRun1 surefire-20260508164627951_1tmp surefire_0-20260508164627951_2tmp"/>
     <property name="http.nonProxyHosts" value="local|*.local|169.254/16|*.169.254/16"/>
     <property name="jdk.debug" value="release"/>
     <property name="surefire.test.class.path" value="/Users/tiagobarros/ATS_25-26/TP_ATS/target-evosuite/test-classes:/Users/tiagobarros/ATS_25-26/TP_ATS/target-evosuite/classes:/Users/tiagobarros/.m2/repository/org/junit/jupiter/junit-jupiter/5.10.2/junit-jupiter-5.10.2.jar:/Users/tiagobarros/.m2/repository/org/junit/jupiter/junit-jupiter-api/5.10.2/junit-jupiter-api-5.10.2.jar:/Users/tiagobarros/.m2/repository/org/opentest4j/opentest4j/1.3.0/opentest4j-1.3.0.jar:/Users/tiagobarros/.m2/repository/org/junit/platform/junit-platform-commons/1.10.2/junit-platform-commons-1.10.2.jar:/Users/tiagobarros/.m2/repository/org/junit/jupiter/junit-jupiter-params/5.10.2/junit-jupiter-params-5.10.2.jar:/Users/tiagobarros/.m2/repository/org/junit/jupiter/junit-jupiter-engine/5.10.2/junit-jupiter-engine-5.10.2.jar:/Users/tiagobarros/.m2/repository/junit/junit/4.13.2/junit-4.13.2.jar:/Users/tiagobarros/.m2/repository/org/hamcrest/hamcrest-core/1.3/hamcrest-core-1.3.jar:/Users/tiagobarros/.m2/repository/org/junit/vintage/junit-vintage-engine/5.10.2/junit-vintage-engine-5.10.2.jar:/Users/tiagobarros/.m2/repository/org/junit/platform/junit-platform-engine/1.10.2/junit-platform-engine-1.10.2.jar:/Users/tiagobarros/.m2/repository/org/apiguardian/apiguardian-api/1.1.2/apiguardian-api-1.1.2.jar:/Users/tiagobarros/.m2/repository/net/jqwik/jqwik/1.8.4/jqwik-1.8.4.jar:/Users/tiagobarros/.m2/repository/net/jqwik/jqwik-api/1.8.4/jqwik-api-1.8.4.jar:/Users/tiagobarros/.m2/repository/net/jqwik/jqwik-web/1.8.4/jqwik-web-1.8.4.jar:/Users/tiagobarros/.m2/repository/net/jqwik/jqwik-time/1.8.4/jqwik-time-1.8.4.jar:/Users/tiagobarros/.m2/repository/net/jqwik/jqwik-engine/1.8.4/jqwik-engine-1.8.4.jar:/Users/tiagobarros/.m2/repository/org/mockito/mockito-core/5.11.0/mockito-core-5.11.0.jar:/Users/tiagobarros/.m2/repository/net/bytebuddy/byte-buddy/1.14.12/byte-buddy-1.14.12.jar:/Users/tiagobarros/.m2/repository/net/bytebuddy/byte-buddy-agent/1.14.12/byte-buddy-agent-1.14.12.jar:/Users/tiagobarros/.m2/repository/org/objenesis/objenesis/3.3/objenesis-3.3.jar:"/>
@@ -35,7 +35,7 @@
     <property name="java.specification.name" value="Java Platform API Specification"/>
     <property name="java.vm.specification.vendor" value="Oracle Corporation"/>
     <property name="java.awt.graphicsenv" value="sun.awt.CGraphicsEnvironment"/>
-    <property name="surefire.real.class.path" value="/Users/tiagobarros/ATS_25-26/TP_ATS/target-evosuite/surefire/surefirebooter-20260505162450294_3.jar"/>
+    <property name="surefire.real.class.path" value="/Users/tiagobarros/ATS_25-26/TP_ATS/target-evosuite/surefire/surefirebooter-20260508164627951_3.jar"/>
     <property name="sun.management.compiler" value="HotSpot 64-Bit Tiered Compilers"/>
     <property name="ftp.nonProxyHosts" value="local|*.local|169.254/16|*.169.254/16"/>
     <property name="java.runtime.version" value="11.0.27+6-LTS"/>
@@ -64,50 +64,50 @@
     <property name="java.class.version" value="55.0"/>
     <property name="socksNonProxyHosts" value="local|*.local|169.254/16|*.169.254/16"/>
   </properties>
-  <testcase name="testAddMusicToCurrentUserPlaylist" classname="org.Model.SpotifUMExtendedTest" time="0.004"/>
-  <testcase name="testAddMusicaSemUrlExisteNoSistema" classname="org.Model.SpotifUMExtendedTest" time="0.004"/>
-  <testcase name="testUtilizadorFreeNaoPodeEscolherMusica" classname="org.Model.SpotifUMExtendedTest" time="0.002"/>
-  <testcase name="testGetGenreWithMostReproductionsSemDadosLancaException" classname="org.Model.SpotifUMExtendedTest" time="0.001"/>
-  <testcase name="testGetUserWithMostReproductionsSemUtilizadoresLancaException" classname="org.Model.SpotifUMExtendedTest" time="0.003"/>
-  <testcase name="testSetPlaylistAsPublicJaPublicaLancaAlreadyExistsException" classname="org.Model.SpotifUMExtendedTest" time="0.011"/>
-  <testcase name="testAddMusicaDuplicadaLancaAlreadyExistsException" classname="org.Model.SpotifUMExtendedTest" time="0.032"/>
-  <testcase name="testUtilizadorFreeNaoTemAcessoALibrary" classname="org.Model.SpotifUMExtendedTest" time="0.002"/>
+  <testcase name="testAddMusicToCurrentUserPlaylist" classname="org.Model.SpotifUMExtendedTest" time="0.001"/>
+  <testcase name="testAddMusicaSemUrlExisteNoSistema" classname="org.Model.SpotifUMExtendedTest" time="0.0"/>
+  <testcase name="testUtilizadorFreeNaoPodeEscolherMusica" classname="org.Model.SpotifUMExtendedTest" time="0.001"/>
+  <testcase name="testGetGenreWithMostReproductionsSemDadosLancaException" classname="org.Model.SpotifUMExtendedTest" time="0.0"/>
+  <testcase name="testGetUserWithMostReproductionsSemUtilizadoresLancaException" classname="org.Model.SpotifUMExtendedTest" time="0.001"/>
+  <testcase name="testSetPlaylistAsPublicJaPublicaLancaAlreadyExistsException" classname="org.Model.SpotifUMExtendedTest" time="0.001"/>
+  <testcase name="testAddMusicaDuplicadaLancaAlreadyExistsException" classname="org.Model.SpotifUMExtendedTest" time="0.001"/>
+  <testcase name="testUtilizadorFreeNaoTemAcessoALibrary" classname="org.Model.SpotifUMExtendedTest" time="0.0"/>
   <testcase name="testChangeCurrentUserNameIgualLancaException" classname="org.Model.SpotifUMExtendedTest" time="0.001"/>
-  <testcase name="testGetMusicByNameNaoExisteLancaNotFoundException" classname="org.Model.SpotifUMExtendedTest" time="0.005"/>
-  <testcase name="testListAllGenresContemGeneroAdicionado" classname="org.Model.SpotifUMExtendedTest" time="0.001"/>
-  <testcase name="testAddMusicaComUrlExisteNoSistema" classname="org.Model.SpotifUMExtendedTest" time="0.0"/>
-  <testcase name="testAddToCurrentUserPlaylistEListar" classname="org.Model.SpotifUMExtendedTest" time="0.004"/>
-  <testcase name="testUtilizadorFreeNaoPodeSkip" classname="org.Model.SpotifUMExtendedTest" time="0.001"/>
+  <testcase name="testGetMusicByNameNaoExisteLancaNotFoundException" classname="org.Model.SpotifUMExtendedTest" time="0.0"/>
+  <testcase name="testListAllGenresContemGeneroAdicionado" classname="org.Model.SpotifUMExtendedTest" time="0.0"/>
+  <testcase name="testAddMusicaComUrlExisteNoSistema" classname="org.Model.SpotifUMExtendedTest" time="0.001"/>
+  <testcase name="testAddToCurrentUserPlaylistEListar" classname="org.Model.SpotifUMExtendedTest" time="0.0"/>
+  <testcase name="testUtilizadorFreeNaoPodeSkip" classname="org.Model.SpotifUMExtendedTest" time="0.0"/>
   <testcase name="testAddToCurrentUserMusicReproductions" classname="org.Model.SpotifUMExtendedTest" time="0.001"/>
   <testcase name="testPlayMusicNaoExisteLancaNotFoundException" classname="org.Model.SpotifUMExtendedTest" time="0.002"/>
-  <testcase name="testListAllMusicsContemMusicaAdicionada" classname="org.Model.SpotifUMExtendedTest" time="0.0"/>
-  <testcase name="testUtilizadorFreeNaoTemAcessoAFavoritos" classname="org.Model.SpotifUMExtendedTest" time="0.006"/>
-  <testcase name="testGetUserWithMostReproductionsComDados" classname="org.Model.SpotifUMExtendedTest" time="0.002"/>
-  <testcase name="testGetCurrentUserPlanNameFree" classname="org.Model.SpotifUMExtendedTest" time="0.002"/>
-  <testcase name="testAddPointsFreeIncrementa5" classname="org.Model.SpotifUMExtendedTest" time="0.004"/>
+  <testcase name="testListAllMusicsContemMusicaAdicionada" classname="org.Model.SpotifUMExtendedTest" time="0.001"/>
+  <testcase name="testUtilizadorFreeNaoTemAcessoAFavoritos" classname="org.Model.SpotifUMExtendedTest" time="0.001"/>
+  <testcase name="testGetUserWithMostReproductionsComDados" classname="org.Model.SpotifUMExtendedTest" time="0.001"/>
+  <testcase name="testGetCurrentUserPlanNameFree" classname="org.Model.SpotifUMExtendedTest" time="0.001"/>
+  <testcase name="testAddPointsFreeIncrementa5" classname="org.Model.SpotifUMExtendedTest" time="0.0"/>
   <testcase name="testPlayMusicIncrementaReproducoes" classname="org.Model.SpotifUMExtendedTest" time="0.001"/>
-  <testcase name="testGetTopArtistNameIdentificaCorrectamente" classname="org.Model.SpotifUMExtendedTest" time="0.002"/>
+  <testcase name="testGetTopArtistNameIdentificaCorrectamente" classname="org.Model.SpotifUMExtendedTest" time="0.001"/>
   <testcase name="testSetPlaylistAsPublicSucesso" classname="org.Model.SpotifUMExtendedTest" time="0.001"/>
-  <testcase name="testMostReproducedMusicSemMusicasLancaException" classname="org.Model.SpotifUMExtendedTest" time="0.001"/>
-  <testcase name="testListPublicPlaylistsContemNomeDaPlaylist" classname="org.Model.SpotifUMExtendedTest" time="0.001"/>
-  <testcase name="testUtilizadorPremiumTopTemFavoritos" classname="org.Model.SpotifUMExtendedTest" time="0.001"/>
-  <testcase name="testSetCurrentUserPassword" classname="org.Model.SpotifUMExtendedTest" time="0.001"/>
-  <testcase name="testGetUserWithMostPointsSemUtilizadoresLancaException" classname="org.Model.SpotifUMExtendedTest" time="0.001"/>
-  <testcase name="testMostReproducedMusicIdentificaCorrectamente" classname="org.Model.SpotifUMExtendedTest" time="0.002"/>
-  <testcase name="testUtilizadorPremiumBasePodeSkip" classname="org.Model.SpotifUMExtendedTest" time="0.001"/>
-  <testcase name="testUtilizadorPremiumBaseTemLibrary" classname="org.Model.SpotifUMExtendedTest" time="0.001"/>
-  <testcase name="testListAllMusicsVazioDevolvStringVazia" classname="org.Model.SpotifUMExtendedTest" time="0.001"/>
+  <testcase name="testMostReproducedMusicSemMusicasLancaException" classname="org.Model.SpotifUMExtendedTest" time="0.0"/>
+  <testcase name="testListPublicPlaylistsContemNomeDaPlaylist" classname="org.Model.SpotifUMExtendedTest" time="0.0"/>
+  <testcase name="testUtilizadorPremiumTopTemFavoritos" classname="org.Model.SpotifUMExtendedTest" time="0.0"/>
+  <testcase name="testSetCurrentUserPassword" classname="org.Model.SpotifUMExtendedTest" time="0.0"/>
+  <testcase name="testGetUserWithMostPointsSemUtilizadoresLancaException" classname="org.Model.SpotifUMExtendedTest" time="0.0"/>
+  <testcase name="testMostReproducedMusicIdentificaCorrectamente" classname="org.Model.SpotifUMExtendedTest" time="0.001"/>
+  <testcase name="testUtilizadorPremiumBasePodeSkip" classname="org.Model.SpotifUMExtendedTest" time="0.0"/>
+  <testcase name="testUtilizadorPremiumBaseTemLibrary" classname="org.Model.SpotifUMExtendedTest" time="0.0"/>
+  <testcase name="testListAllMusicsVazioDevolvStringVazia" classname="org.Model.SpotifUMExtendedTest" time="0.0"/>
   <testcase name="testSetCurrentUserEmail" classname="org.Model.SpotifUMExtendedTest" time="0.001"/>
-  <testcase name="testGetCurrentUserPlanNamePremiumBase" classname="org.Model.SpotifUMExtendedTest" time="0.001"/>
-  <testcase name="testGetTopArtistNameSemArtistasLancaException" classname="org.Model.SpotifUMExtendedTest" time="0.002"/>
-  <testcase name="testGetUserWithMostReproductionsDatasBoundaryExclusivas" classname="org.Model.SpotifUMExtendedTest" time="0.008"/>
-  <testcase name="testIncrementGenreReproductionsEGetGenre" classname="org.Model.SpotifUMExtendedTest" time="0.004"/>
+  <testcase name="testGetCurrentUserPlanNamePremiumBase" classname="org.Model.SpotifUMExtendedTest" time="0.0"/>
+  <testcase name="testGetTopArtistNameSemArtistasLancaException" classname="org.Model.SpotifUMExtendedTest" time="0.001"/>
+  <testcase name="testGetUserWithMostReproductionsDatasBoundaryExclusivas" classname="org.Model.SpotifUMExtendedTest" time="0.0"/>
+  <testcase name="testIncrementGenreReproductionsEGetGenre" classname="org.Model.SpotifUMExtendedTest" time="0.003"/>
   <testcase name="testAddPointsPremiumBaseIncrementa10" classname="org.Model.SpotifUMExtendedTest" time="0.001"/>
-  <testcase name="testAddMusicToCurrentUserPlaylistMusicaInexistenteLancaNotFoundException" classname="org.Model.SpotifUMExtendedTest" time="0.002"/>
-  <testcase name="testChangeCurrentUserNameJaExisteLancaException" classname="org.Model.SpotifUMExtendedTest" time="0.011"/>
-  <testcase name="testUtilizadorPremiumBaseNaoTemFavoritos" classname="org.Model.SpotifUMExtendedTest" time="0.002"/>
+  <testcase name="testAddMusicToCurrentUserPlaylistMusicaInexistenteLancaNotFoundException" classname="org.Model.SpotifUMExtendedTest" time="0.001"/>
+  <testcase name="testChangeCurrentUserNameJaExisteLancaException" classname="org.Model.SpotifUMExtendedTest" time="0.0"/>
+  <testcase name="testUtilizadorPremiumBaseNaoTemFavoritos" classname="org.Model.SpotifUMExtendedTest" time="0.0"/>
   <testcase name="testChangeCurrentUserNameSucesso" classname="org.Model.SpotifUMExtendedTest" time="0.001"/>
-  <testcase name="testGetUserWithMostPlaylistsSemUtilizadoresLancaException" classname="org.Model.SpotifUMExtendedTest" time="0.013"/>
+  <testcase name="testGetUserWithMostPlaylistsSemUtilizadoresLancaException" classname="org.Model.SpotifUMExtendedTest" time="0.0"/>
   <testcase name="testPlayMusicDevolveLyrics" classname="org.Model.SpotifUMExtendedTest" time="0.0"/>
   <testcase name="testIsPasswordCorrect" classname="org.Model.SpotifUMExtendedTest" time="0.0"/>
 </testsuite>

@@ -56,3 +56,4 @@ org/Controller/dtos/MusicInfoTest.class
 org/View/StatisticsMenuTest.class
 org/Exceptions/NoMusicsInDatabaseExceptionTest.class
 org/Exceptions/NoReproductionsInDatabaseExceptionTest.class
+org/QuickCheck/QuickCheckPropertyTest.class

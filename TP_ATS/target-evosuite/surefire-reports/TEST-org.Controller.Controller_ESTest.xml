@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testsuite xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="https://maven.apache.org/surefire/maven-surefire-plugin/xsd/surefire-test-report-3.0.xsd" version="3.0" name="org.Controller.Controller_ESTest" time="0.171" tests="104" errors="0" skipped="6" failures="0">
+<testsuite xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="https://maven.apache.org/surefire/maven-surefire-plugin/xsd/surefire-test-report-3.0.xsd" version="3.0" name="org.Controller.Controller_ESTest" time="0.115" tests="104" errors="0" skipped="6" failures="0">
   <properties>
     <property name="gopherProxySet" value="false"/>
     <property name="awt.toolkit" value="sun.lwawt.macosx.LWCToolkit"/>
@@ -16,7 +16,7 @@
     <property name="sun.java.launcher" value="SUN_STANDARD"/>
     <property name="user.country" value="PT"/>
     <property name="sun.boot.library.path" value="/Users/tiagobarros/Library/Java/JavaVirtualMachines/ms-11.0.27/Contents/Home/lib"/>
-    <property name="sun.java.command" value="/Users/tiagobarros/ATS_25-26/TP_ATS/target-evosuite/surefire/surefirebooter-20260505162450294_6.jar /Users/tiagobarros/ATS_25-26/TP_ATS/target-evosuite/surefire 2026-05-05T16-24-50_208-jvmRun1 surefire-20260505162450294_4tmp surefire_1-20260505162450294_5tmp"/>
+    <property name="sun.java.command" value="/Users/tiagobarros/ATS_25-26/TP_ATS/target-evosuite/surefire/surefirebooter-20260508164627951_10.jar /Users/tiagobarros/ATS_25-26/TP_ATS/target-evosuite/surefire 2026-05-08T16-46-27_879-jvmRun1 surefire-20260508164627951_8tmp surefire_1-20260508164627951_9tmp"/>
     <property name="http.nonProxyHosts" value="local|*.local|169.254/16|*.169.254/16"/>
     <property name="jdk.debug" value="release"/>
     <property name="surefire.test.class.path" value="/Users/tiagobarros/ATS_25-26/TP_ATS/target-evosuite/test-classes:/Users/tiagobarros/ATS_25-26/TP_ATS/target-evosuite/classes:/Users/tiagobarros/.m2/repository/org/evosuite/evosuite-standalone-runtime/1.0.6/evosuite-standalone-runtime-1.0.6.jar:/Users/tiagobarros/.m2/repository/org/junit/jupiter/junit-jupiter/5.10.2/junit-jupiter-5.10.2.jar:/Users/tiagobarros/.m2/repository/org/junit/jupiter/junit-jupiter-api/5.10.2/junit-jupiter-api-5.10.2.jar:/Users/tiagobarros/.m2/repository/org/opentest4j/opentest4j/1.3.0/opentest4j-1.3.0.jar:/Users/tiagobarros/.m2/repository/org/junit/platform/junit-platform-commons/1.10.2/junit-platform-commons-1.10.2.jar:/Users/tiagobarros/.m2/repository/org/junit/jupiter/junit-jupiter-params/5.10.2/junit-jupiter-params-5.10.2.jar:/Users/tiagobarros/.m2/repository/org/junit/jupiter/junit-jupiter-engine/5.10.2/junit-jupiter-engine-5.10.2.jar:/Users/tiagobarros/.m2/repository/junit/junit/4.13.2/junit-4.13.2.jar:/Users/tiagobarros/.m2/repository/org/hamcrest/hamcrest-core/1.3/hamcrest-core-1.3.jar:/Users/tiagobarros/.m2/repository/org/junit/vintage/junit-vintage-engine/5.10.2/junit-vintage-engine-5.10.2.jar:/Users/tiagobarros/.m2/repository/org/junit/platform/junit-platform-engine/1.10.2/junit-platform-engine-1.10.2.jar:/Users/tiagobarros/.m2/repository/org/apiguardian/apiguardian-api/1.1.2/apiguardian-api-1.1.2.jar:/Users/tiagobarros/.m2/repository/net/jqwik/jqwik/1.8.4/jqwik-1.8.4.jar:/Users/tiagobarros/.m2/repository/net/jqwik/jqwik-api/1.8.4/jqwik-api-1.8.4.jar:/Users/tiagobarros/.m2/repository/net/jqwik/jqwik-web/1.8.4/jqwik-web-1.8.4.jar:/Users/tiagobarros/.m2/repository/net/jqwik/jqwik-time/1.8.4/jqwik-time-1.8.4.jar:/Users/tiagobarros/.m2/repository/net/jqwik/jqwik-engine/1.8.4/jqwik-engine-1.8.4.jar:/Users/tiagobarros/.m2/repository/org/mockito/mockito-core/5.11.0/mockito-core-5.11.0.jar:/Users/tiagobarros/.m2/repository/net/bytebuddy/byte-buddy/1.14.12/byte-buddy-1.14.12.jar:/Users/tiagobarros/.m2/repository/net/bytebuddy/byte-buddy-agent/1.14.12/byte-buddy-agent-1.14.12.jar:/Users/tiagobarros/.m2/repository/org/objenesis/objenesis/3.3/objenesis-3.3.jar:"/>
@@ -33,7 +33,7 @@
     <property name="java.specification.name" value="Java Platform API Specification"/>
     <property name="java.vm.specification.vendor" value="Oracle Corporation"/>
     <property name="java.awt.graphicsenv" value="sun.awt.CGraphicsEnvironment"/>
-    <property name="surefire.real.class.path" value="/Users/tiagobarros/ATS_25-26/TP_ATS/target-evosuite/surefire/surefirebooter-20260505162450294_6.jar"/>
+    <property name="surefire.real.class.path" value="/Users/tiagobarros/ATS_25-26/TP_ATS/target-evosuite/surefire/surefirebooter-20260508164627951_10.jar"/>
     <property name="sun.management.compiler" value="HotSpot 64-Bit Tiered Compilers"/>
     <property name="ftp.nonProxyHosts" value="local|*.local|169.254/16|*.169.254/16"/>
     <property name="java.runtime.version" value="11.0.27+6-LTS"/>
@@ -62,71 +62,71 @@
     <property name="java.class.version" value="55.0"/>
     <property name="socksNonProxyHosts" value="local|*.local|169.254/16|*.169.254/16"/>
   </properties>
-  <testcase name="test000" classname="org.Controller.Controller_ESTest" time="0.025"/>
+  <testcase name="test000" classname="org.Controller.Controller_ESTest" time="0.018"/>
   <testcase name="test001" classname="org.Controller.Controller_ESTest" time="0.001"/>
-  <testcase name="test002" classname="org.Controller.Controller_ESTest" time="0.002"/>
-  <testcase name="test003" classname="org.Controller.Controller_ESTest" time="0.006"/>
+  <testcase name="test002" classname="org.Controller.Controller_ESTest" time="0.001"/>
+  <testcase name="test003" classname="org.Controller.Controller_ESTest" time="0.004"/>
   <testcase name="test004" classname="org.Controller.Controller_ESTest" time="0.001"/>
   <testcase name="test005" classname="org.Controller.Controller_ESTest" time="0.0"/>
   <testcase name="test006" classname="org.Controller.Controller_ESTest" time="0.0"/>
   <testcase name="test007" classname="org.Controller.Controller_ESTest" time="0.001"/>
   <testcase name="test008" classname="org.Controller.Controller_ESTest" time="0.001"/>
-  <testcase name="test009" classname="org.Controller.Controller_ESTest" time="0.001"/>
+  <testcase name="test009" classname="org.Controller.Controller_ESTest" time="0.0"/>
   <testcase name="test010" classname="org.Controller.Controller_ESTest" time="0.001"/>
-  <testcase name="test011" classname="org.Controller.Controller_ESTest" time="0.001"/>
-  <testcase name="test012" classname="org.Controller.Controller_ESTest" time="0.008"/>
-  <testcase name="test013" classname="org.Controller.Controller_ESTest" time="0.001"/>
-  <testcase name="test014" classname="org.Controller.Controller_ESTest" time="0.001"/>
+  <testcase name="test011" classname="org.Controller.Controller_ESTest" time="0.0"/>
+  <testcase name="test012" classname="org.Controller.Controller_ESTest" time="0.006"/>
+  <testcase name="test013" classname="org.Controller.Controller_ESTest" time="0.0"/>
+  <testcase name="test014" classname="org.Controller.Controller_ESTest" time="0.0"/>
   <testcase name="test015" classname="org.Controller.Controller_ESTest" time="0.001"/>
-  <testcase name="test016" classname="org.Controller.Controller_ESTest" time="0.001"/>
+  <testcase name="test016" classname="org.Controller.Controller_ESTest" time="0.0"/>
   <testcase name="test017" classname="org.Controller.Controller_ESTest" time="0.0">
     <skipped message="EvoSuite: depends on playlist state"/>
   </testcase>
-  <testcase name="test018" classname="org.Controller.Controller_ESTest" time="0.005"/>
+  <testcase name="test018" classname="org.Controller.Controller_ESTest" time="0.003"/>
   <testcase name="test019" classname="org.Controller.Controller_ESTest" time="0.002"/>
-  <testcase name="test020" classname="org.Controller.Controller_ESTest" time="0.001"/>
+  <testcase name="test020" classname="org.Controller.Controller_ESTest" time="0.0"/>
   <testcase name="test021" classname="org.Controller.Controller_ESTest" time="0.0"/>
-  <testcase name="test022" classname="org.Controller.Controller_ESTest" time="0.001"/>
+  <testcase name="test022" classname="org.Controller.Controller_ESTest" time="0.0"/>
   <testcase name="test023" classname="org.Controller.Controller_ESTest" time="0.001"/>
   <testcase name="test024" classname="org.Controller.Controller_ESTest" time="0.002"/>
-  <testcase name="test025" classname="org.Controller.Controller_ESTest" time="0.001"/>
-  <testcase name="test026" classname="org.Controller.Controller_ESTest" time="0.0"/>
-  <testcase name="test027" classname="org.Controller.Controller_ESTest" time="0.001"/>
+  <testcase name="test025" classname="org.Controller.Controller_ESTest" time="0.0"/>
+  <testcase name="test026" classname="org.Controller.Controller_ESTest" time="0.001"/>
+  <testcase name="test027" classname="org.Controller.Controller_ESTest" time="0.0"/>
   <testcase name="test028" classname="org.Controller.Controller_ESTest" time="0.0"/>
-  <testcase name="test029" classname="org.Controller.Controller_ESTest" time="0.0"/>
-  <testcase name="test030" classname="org.Controller.Controller_ESTest" time="0.032">
+  <testcase name="test029" classname="org.Controller.Controller_ESTest" time="0.001"/>
+  <testcase name="test030" classname="org.Controller.Controller_ESTest" time="0.019">
     <system-err><![CDATA[SLF4J: Failed to load class "org.slf4j.impl.StaticLoggerBinder".
 SLF4J: Defaulting to no-operation (NOP) logger implementation
 SLF4J: See http://www.slf4j.org/codes.html#StaticLoggerBinder for further details.
 ]]></system-err>
   </testcase>
-  <testcase name="test031" classname="org.Controller.Controller_ESTest" time="0.001"/>
-  <testcase name="test032" classname="org.Controller.Controller_ESTest" time="0.002"/>
-  <testcase name="test033" classname="org.Controller.Controller_ESTest" time="0.0"/>
-  <testcase name="test034" classname="org.Controller.Controller_ESTest" time="0.009"/>
-  <testcase name="test035" classname="org.Controller.Controller_ESTest" time="0.001"/>
+  <testcase name="test031" classname="org.Controller.Controller_ESTest" time="0.0"/>
+  <testcase name="test032" classname="org.Controller.Controller_ESTest" time="0.001"/>
+  <testcase name="test033" classname="org.Controller.Controller_ESTest" time="0.001"/>
+  <testcase name="test034" classname="org.Controller.Controller_ESTest" time="0.005"/>
+  <testcase name="test035" classname="org.Controller.Controller_ESTest" time="0.0"/>
   <testcase name="test036" classname="org.Controller.Controller_ESTest" time="0.0"/>
-  <testcase name="test037" classname="org.Controller.Controller_ESTest" time="0.001"/>
+  <testcase name="test037" classname="org.Controller.Controller_ESTest" time="0.0"/>
   <testcase name="test038" classname="org.Controller.Controller_ESTest" time="0.0"/>
-  <testcase name="test039" classname="org.Controller.Controller_ESTest" time="0.001"/>
+  <testcase name="test039" classname="org.Controller.Controller_ESTest" time="0.0"/>
   <testcase name="test040" classname="org.Controller.Controller_ESTest" time="0.0"/>
   <testcase name="test041" classname="org.Controller.Controller_ESTest" time="0.001"/>
   <testcase name="test042" classname="org.Controller.Controller_ESTest" time="0.0"/>
   <testcase name="test043" classname="org.Controller.Controller_ESTest" time="0.0"/>
-  <testcase name="test044" classname="org.Controller.Controller_ESTest" time="0.002"/>
+  <testcase name="test044" classname="org.Controller.Controller_ESTest" time="0.001"/>
   <testcase name="test045" classname="org.Controller.Controller_ESTest" time="0.0"/>
   <testcase name="test046" classname="org.Controller.Controller_ESTest" time="0.0"/>
-  <testcase name="test047" classname="org.Controller.Controller_ESTest" time="0.001"/>
-  <testcase name="test048" classname="org.Controller.Controller_ESTest" time="0.0"/>
-  <testcase name="test049" classname="org.Controller.Controller_ESTest" time="0.001"/>
+  <testcase name="test047" classname="org.Controller.Controller_ESTest" time="0.0"/>
+  <testcase name="test048" classname="org.Controller.Controller_ESTest" time="0.001"/>
+  <testcase name="test049" classname="org.Controller.Controller_ESTest" time="0.0"/>
   <testcase name="test050" classname="org.Controller.Controller_ESTest" time="0.001"/>
   <testcase name="test051" classname="org.Controller.Controller_ESTest" time="0.0"/>
-  <testcase name="test052" classname="org.Controller.Controller_ESTest" time="0.0"/>
-  <testcase name="test053" classname="org.Controller.Controller_ESTest" time="0.001"/>
+  <testcase name="test052" classname="org.Controller.Controller_ESTest" time="0.001"/>
+  <testcase name="test053" classname="org.Controller.Controller_ESTest" time="0.0"/>
   <testcase name="test054" classname="org.Controller.Controller_ESTest" time="0.002"/>
   <testcase name="test055" classname="org.Controller.Controller_ESTest" time="0.001"/>
   <testcase name="test056" classname="org.Controller.Controller_ESTest" time="0.0"/>
-  <testcase name="test057" classname="org.Controller.Controller_ESTest" time="0.004"/>
+  <testcase name="test057" classname="org.Controller.Controller_ESTest" time="0.002"/>
   <testcase name="test058" classname="org.Controller.Controller_ESTest" time="0.0"/>
   <testcase name="test059" classname="org.Controller.Controller_ESTest" time="0.0"/>
   <testcase name="test060" classname="org.Controller.Controller_ESTest" time="0.0"/>
@@ -134,49 +134,49 @@ SLF4J: See http://www.slf4j.org/codes.html#StaticLoggerBinder for further detail
   <testcase name="test062" classname="org.Controller.Controller_ESTest" time="0.0">
     <skipped message="EvoSuite: depends on playlist state"/>
   </testcase>
-  <testcase name="test063" classname="org.Controller.Controller_ESTest" time="0.001"/>
+  <testcase name="test063" classname="org.Controller.Controller_ESTest" time="0.0"/>
   <testcase name="test064" classname="org.Controller.Controller_ESTest" time="0.0"/>
-  <testcase name="test065" classname="org.Controller.Controller_ESTest" time="0.001"/>
+  <testcase name="test065" classname="org.Controller.Controller_ESTest" time="0.0"/>
   <testcase name="test066" classname="org.Controller.Controller_ESTest" time="0.0">
     <skipped message="EvoSuite: depends on playlist order"/>
   </testcase>
-  <testcase name="test067" classname="org.Controller.Controller_ESTest" time="0.0"/>
+  <testcase name="test067" classname="org.Controller.Controller_ESTest" time="0.001"/>
   <testcase name="test068" classname="org.Controller.Controller_ESTest" time="0.0">
     <skipped message="EvoSuite: depends on playlist order"/>
   </testcase>
   <testcase name="test069" classname="org.Controller.Controller_ESTest" time="0.0"/>
-  <testcase name="test070" classname="org.Controller.Controller_ESTest" time="0.001"/>
+  <testcase name="test070" classname="org.Controller.Controller_ESTest" time="0.0"/>
   <testcase name="test071" classname="org.Controller.Controller_ESTest" time="0.001"/>
-  <testcase name="test072" classname="org.Controller.Controller_ESTest" time="0.001"/>
-  <testcase name="test073" classname="org.Controller.Controller_ESTest" time="0.001"/>
-  <testcase name="test074" classname="org.Controller.Controller_ESTest" time="0.0"/>
+  <testcase name="test072" classname="org.Controller.Controller_ESTest" time="0.0"/>
+  <testcase name="test073" classname="org.Controller.Controller_ESTest" time="0.0"/>
+  <testcase name="test074" classname="org.Controller.Controller_ESTest" time="0.001"/>
   <testcase name="test075" classname="org.Controller.Controller_ESTest" time="0.0"/>
   <testcase name="test076" classname="org.Controller.Controller_ESTest" time="0.0"/>
-  <testcase name="test077" classname="org.Controller.Controller_ESTest" time="0.001"/>
+  <testcase name="test077" classname="org.Controller.Controller_ESTest" time="0.0"/>
   <testcase name="test078" classname="org.Controller.Controller_ESTest" time="0.0"/>
   <testcase name="test079" classname="org.Controller.Controller_ESTest" time="0.0"/>
-  <testcase name="test080" classname="org.Controller.Controller_ESTest" time="0.0"/>
-  <testcase name="test081" classname="org.Controller.Controller_ESTest" time="0.001"/>
+  <testcase name="test080" classname="org.Controller.Controller_ESTest" time="0.001"/>
+  <testcase name="test081" classname="org.Controller.Controller_ESTest" time="0.0"/>
   <testcase name="test082" classname="org.Controller.Controller_ESTest" time="0.0"/>
   <testcase name="test083" classname="org.Controller.Controller_ESTest" time="0.001"/>
   <testcase name="test084" classname="org.Controller.Controller_ESTest" time="0.0"/>
-  <testcase name="test085" classname="org.Controller.Controller_ESTest" time="0.001"/>
-  <testcase name="test086" classname="org.Controller.Controller_ESTest" time="0.0"/>
-  <testcase name="test087" classname="org.Controller.Controller_ESTest" time="0.001"/>
-  <testcase name="test088" classname="org.Controller.Controller_ESTest" time="0.001"/>
-  <testcase name="test089" classname="org.Controller.Controller_ESTest" time="0.0"/>
+  <testcase name="test085" classname="org.Controller.Controller_ESTest" time="0.0"/>
+  <testcase name="test086" classname="org.Controller.Controller_ESTest" time="0.001"/>
+  <testcase name="test087" classname="org.Controller.Controller_ESTest" time="0.0"/>
+  <testcase name="test088" classname="org.Controller.Controller_ESTest" time="0.0"/>
+  <testcase name="test089" classname="org.Controller.Controller_ESTest" time="0.001"/>
   <testcase name="test090" classname="org.Controller.Controller_ESTest" time="0.0"/>
-  <testcase name="test091" classname="org.Controller.Controller_ESTest" time="0.001"/>
-  <testcase name="test092" classname="org.Controller.Controller_ESTest" time="0.0"/>
+  <testcase name="test091" classname="org.Controller.Controller_ESTest" time="0.0"/>
+  <testcase name="test092" classname="org.Controller.Controller_ESTest" time="0.001"/>
   <testcase name="test093" classname="org.Controller.Controller_ESTest" time="0.0"/>
   <testcase name="test094" classname="org.Controller.Controller_ESTest" time="0.0"/>
-  <testcase name="test095" classname="org.Controller.Controller_ESTest" time="0.001"/>
+  <testcase name="test095" classname="org.Controller.Controller_ESTest" time="0.0"/>
   <testcase name="test096" classname="org.Controller.Controller_ESTest" time="0.0">
     <skipped message="EvoSuite: filesystem path dependent"/>
   </testcase>
   <testcase name="test097" classname="org.Controller.Controller_ESTest" time="0.0"/>
-  <testcase name="test098" classname="org.Controller.Controller_ESTest" time="0.001"/>
-  <testcase name="test099" classname="org.Controller.Controller_ESTest" time="0.0"/>
+  <testcase name="test098" classname="org.Controller.Controller_ESTest" time="0.0"/>
+  <testcase name="test099" classname="org.Controller.Controller_ESTest" time="0.001"/>
   <testcase name="test100" classname="org.Controller.Controller_ESTest" time="0.0">
     <skipped message="EvoSuite: filesystem path dependent"/>
   </testcase>

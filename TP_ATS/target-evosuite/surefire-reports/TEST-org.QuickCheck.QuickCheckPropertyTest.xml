@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testsuite xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="https://maven.apache.org/surefire/maven-surefire-plugin/xsd/surefire-test-report-3.0.xsd" version="3.0" name="org.View.ProfileEditorMenuTest" time="0.108" tests="8" errors="0" skipped="0" failures="0">
+<testsuite xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="https://maven.apache.org/surefire/maven-surefire-plugin/xsd/surefire-test-report-3.0.xsd" version="3.0" name="org.QuickCheck.QuickCheckPropertyTest" time="0.212" tests="5" errors="0" skipped="0" failures="0">
   <properties>
     <property name="gopherProxySet" value="false"/>
     <property name="awt.toolkit" value="sun.lwawt.macosx.LWCToolkit"/>
@@ -64,12 +64,25 @@
     <property name="java.class.version" value="55.0"/>
     <property name="socksNonProxyHosts" value="local|*.local|169.254/16|*.169.254/16"/>
   </properties>
-  <testcase name="testChangePasswordIncorrect" classname="org.View.ProfileEditorMenuTest" time="0.018"/>
-  <testcase name="testNonNumericInput" classname="org.View.ProfileEditorMenuTest" time="0.008"/>
-  <testcase name="testBackToProfileMenu" classname="org.View.ProfileEditorMenuTest" time="0.015"/>
-  <testcase name="testInvalidOption" classname="org.View.ProfileEditorMenuTest" time="0.012"/>
-  <testcase name="testChangeName" classname="org.View.ProfileEditorMenuTest" time="0.012"/>
-  <testcase name="testNavigatePlans" classname="org.View.ProfileEditorMenuTest" time="0.015"/>
-  <testcase name="testChangePasswordCorrect" classname="org.View.ProfileEditorMenuTest" time="0.012"/>
-  <testcase name="testChangeEmail" classname="org.View.ProfileEditorMenuTest" time="0.012"/>
+  <testcase name="musicPlayIncrementsReproductions" classname="org.QuickCheck.QuickCheckPropertyTest" time="0.142">
+    <system-err><![CDATA[mai 08, 2026 4:46:36 DA TARDE net.jqwik.engine.properties.RandomizedShrinkablesGenerator logEdgeCasesOutnumberTriesIfApplicable
+INFO: Edge case generation exceeds number of tries. Stopped after 100 generated cases.
+]]></system-err>
+  </testcase>
+  <testcase name="randomPlaylistUsesOnlyExistingMusics" classname="org.QuickCheck.QuickCheckPropertyTest" time="0.02">
+    <system-err><![CDATA[mai 08, 2026 4:46:36 DA TARDE net.jqwik.engine.properties.RandomizedShrinkablesGenerator logEdgeCasesOutnumberTriesIfApplicable
+INFO: Edge case generation exceeds number of tries. Stopped after 100 generated cases.
+]]></system-err>
+  </testcase>
+  <testcase name="planFreeAddsFive" classname="org.QuickCheck.QuickCheckPropertyTest" time="0.004"/>
+  <testcase name="playlistAddRemoveKeepsSize" classname="org.QuickCheck.QuickCheckPropertyTest" time="0.024">
+    <system-err><![CDATA[mai 08, 2026 4:46:36 DA TARDE net.jqwik.engine.properties.RandomizedShrinkablesGenerator logEdgeCasesOutnumberTriesIfApplicable
+INFO: Edge case generation exceeds number of tries. Stopped after 100 generated cases.
+]]></system-err>
+  </testcase>
+  <testcase name="genrePlaylistRespectsConstraints" classname="org.QuickCheck.QuickCheckPropertyTest" time="0.012">
+    <system-err><![CDATA[mai 08, 2026 4:46:36 DA TARDE net.jqwik.engine.properties.RandomizedShrinkablesGenerator logEdgeCasesOutnumberTriesIfApplicable
+INFO: Edge case generation exceeds number of tries. Stopped after 100 generated cases.
+]]></system-err>
+  </testcase>
 </testsuite>

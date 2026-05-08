@@ -167,8 +167,7 @@ Para teste em larga escala recorremos a property based testing com `jqwik` (esti
 **Comando de execucao:**
 - `mvn test` (ou `mvn -Dtest=QuickCheckPropertyTest test`).
 
-**Resultados (ultima execucao):**
+**Resultados:**
 - 5 propriedades executadas, 0 falhas, 0 erros.
-- 100 geracoes por propriedade (tries=100), com execucao total ~0.4s.
-- O log indica que a geracao de edge cases excedeu o numero de tentativas, o que e esperado quando o numero de casos limite e alto; nao afetou o sucesso dos testes.
-
+- 100 gerações por propriedade.
+- O log indica que a geracao de edge cases excedeu o numero de tentativas.
